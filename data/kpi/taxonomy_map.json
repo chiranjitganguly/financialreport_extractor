@@ -1,0 +1,3396 @@
+[
+  {
+    "kpi_id": "KPI_001",
+    "kpi_name": "Revenue",
+    "definition": "Revenue as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Revenue.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Revenue"
+    ]
+  },
+  {
+    "kpi_id": "KPI_002",
+    "kpi_name": "Revenue Growth",
+    "definition": "Revenue Growth as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Revenue Growth.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Revenue Growth"
+    ]
+  },
+  {
+    "kpi_id": "KPI_003",
+    "kpi_name": "Net Sales",
+    "definition": "Net Sales as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Sales.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Sales"
+    ]
+  },
+  {
+    "kpi_id": "KPI_004",
+    "kpi_name": "Gross Profit",
+    "definition": "Gross Profit as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Gross Profit.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Gross Profit"
+    ]
+  },
+  {
+    "kpi_id": "KPI_005",
+    "kpi_name": "Gross Margin",
+    "definition": "Gross Margin as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Gross Margin.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Gross Margin"
+    ]
+  },
+  {
+    "kpi_id": "KPI_006",
+    "kpi_name": "Operating Income",
+    "definition": "Operating Income as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Operating Income.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Operating Income"
+    ]
+  },
+  {
+    "kpi_id": "KPI_007",
+    "kpi_name": "Operating Margin",
+    "definition": "Operating Margin as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Operating Margin.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Operating Margin"
+    ]
+  },
+  {
+    "kpi_id": "KPI_008",
+    "kpi_name": "EBIT",
+    "definition": "EBIT as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for EBIT.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "EBIT"
+    ]
+  },
+  {
+    "kpi_id": "KPI_009",
+    "kpi_name": "EBIT Margin",
+    "definition": "EBIT Margin as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for EBIT Margin.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "EBIT Margin"
+    ]
+  },
+  {
+    "kpi_id": "KPI_010",
+    "kpi_name": "EBITDA",
+    "definition": "EBITDA as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for EBITDA.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "EBITDA"
+    ]
+  },
+  {
+    "kpi_id": "KPI_011",
+    "kpi_name": "EBITDA Margin",
+    "definition": "EBITDA Margin as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for EBITDA Margin.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "EBITDA Margin"
+    ]
+  },
+  {
+    "kpi_id": "KPI_012",
+    "kpi_name": "Net Profit",
+    "definition": "Net Profit as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Profit.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Profit"
+    ]
+  },
+  {
+    "kpi_id": "KPI_013",
+    "kpi_name": "Net Profit Margin",
+    "definition": "Net Profit Margin as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Profit Margin.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Profit Margin"
+    ]
+  },
+  {
+    "kpi_id": "KPI_014",
+    "kpi_name": "Profit Before Tax",
+    "definition": "Profit Before Tax as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Profit Before Tax.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Profit Before Tax"
+    ]
+  },
+  {
+    "kpi_id": "KPI_015",
+    "kpi_name": "Basic EPS",
+    "definition": "Basic EPS as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Basic EPS.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Basic EPS"
+    ]
+  },
+  {
+    "kpi_id": "KPI_016",
+    "kpi_name": "Diluted EPS",
+    "definition": "Diluted EPS as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Diluted EPS.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Diluted EPS"
+    ]
+  },
+  {
+    "kpi_id": "KPI_017",
+    "kpi_name": "Operating Cash Flow",
+    "definition": "Operating Cash Flow as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Operating Cash Flow.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Operating Cash Flow"
+    ]
+  },
+  {
+    "kpi_id": "KPI_018",
+    "kpi_name": "Free Cash Flow",
+    "definition": "Free Cash Flow as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Free Cash Flow.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Free Cash Flow"
+    ]
+  },
+  {
+    "kpi_id": "KPI_019",
+    "kpi_name": "Capital Expenditure",
+    "definition": "Capital Expenditure as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Capital Expenditure.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Capital Expenditure"
+    ]
+  },
+  {
+    "kpi_id": "KPI_020",
+    "kpi_name": "Cash Conversion Ratio",
+    "definition": "Cash Conversion Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Cash Conversion Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Cash Conversion Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_021",
+    "kpi_name": "Total Assets",
+    "definition": "Total Assets as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Total Assets.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Total Assets"
+    ]
+  },
+  {
+    "kpi_id": "KPI_022",
+    "kpi_name": "Total Liabilities",
+    "definition": "Total Liabilities as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Total Liabilities.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Total Liabilities"
+    ]
+  },
+  {
+    "kpi_id": "KPI_023",
+    "kpi_name": "Shareholders Equity",
+    "definition": "Shareholders Equity as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Shareholders Equity.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Shareholders Equity"
+    ]
+  },
+  {
+    "kpi_id": "KPI_024",
+    "kpi_name": "Current Assets",
+    "definition": "Current Assets as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Current Assets.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Current Assets"
+    ]
+  },
+  {
+    "kpi_id": "KPI_025",
+    "kpi_name": "Current Liabilities",
+    "definition": "Current Liabilities as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Current Liabilities.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Current Liabilities"
+    ]
+  },
+  {
+    "kpi_id": "KPI_026",
+    "kpi_name": "Current Ratio",
+    "definition": "Current Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Current Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Current Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_027",
+    "kpi_name": "Quick Ratio",
+    "definition": "Quick Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Quick Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Quick Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_028",
+    "kpi_name": "Debt to Equity Ratio",
+    "definition": "Debt to Equity Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Debt to Equity Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Debt to Equity Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_029",
+    "kpi_name": "Interest Coverage Ratio",
+    "definition": "Interest Coverage Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Interest Coverage Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Interest Coverage Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_030",
+    "kpi_name": "Return on Assets",
+    "definition": "Return on Assets as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Return on Assets.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Return on Assets"
+    ]
+  },
+  {
+    "kpi_id": "KPI_031",
+    "kpi_name": "Return on Equity",
+    "definition": "Return on Equity as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Return on Equity.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Return on Equity"
+    ]
+  },
+  {
+    "kpi_id": "KPI_032",
+    "kpi_name": "Return on Capital Employed",
+    "definition": "Return on Capital Employed as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Return on Capital Employed.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Return on Capital Employed"
+    ]
+  },
+  {
+    "kpi_id": "KPI_033",
+    "kpi_name": "Asset Turnover",
+    "definition": "Asset Turnover as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Asset Turnover.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Asset Turnover"
+    ]
+  },
+  {
+    "kpi_id": "KPI_034",
+    "kpi_name": "Inventory",
+    "definition": "Inventory as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Inventory.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Inventory"
+    ]
+  },
+  {
+    "kpi_id": "KPI_035",
+    "kpi_name": "Inventory Turnover",
+    "definition": "Inventory Turnover as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Inventory Turnover.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Inventory Turnover"
+    ]
+  },
+  {
+    "kpi_id": "KPI_036",
+    "kpi_name": "Days Inventory Outstanding",
+    "definition": "Days Inventory Outstanding as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Days Inventory Outstanding.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Days Inventory Outstanding"
+    ]
+  },
+  {
+    "kpi_id": "KPI_037",
+    "kpi_name": "Trade Receivables",
+    "definition": "Trade Receivables as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Trade Receivables.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Trade Receivables"
+    ]
+  },
+  {
+    "kpi_id": "KPI_038",
+    "kpi_name": "Receivables Turnover",
+    "definition": "Receivables Turnover as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Receivables Turnover.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Receivables Turnover"
+    ]
+  },
+  {
+    "kpi_id": "KPI_039",
+    "kpi_name": "Days Sales Outstanding",
+    "definition": "Days Sales Outstanding as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Days Sales Outstanding.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Days Sales Outstanding"
+    ]
+  },
+  {
+    "kpi_id": "KPI_040",
+    "kpi_name": "Trade Payables",
+    "definition": "Trade Payables as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Trade Payables.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Trade Payables"
+    ]
+  },
+  {
+    "kpi_id": "KPI_041",
+    "kpi_name": "Payables Turnover",
+    "definition": "Payables Turnover as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Payables Turnover.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Payables Turnover"
+    ]
+  },
+  {
+    "kpi_id": "KPI_042",
+    "kpi_name": "Days Payables Outstanding",
+    "definition": "Days Payables Outstanding as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Days Payables Outstanding.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Days Payables Outstanding"
+    ]
+  },
+  {
+    "kpi_id": "KPI_043",
+    "kpi_name": "Working Capital",
+    "definition": "Working Capital as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Working Capital.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Working Capital"
+    ]
+  },
+  {
+    "kpi_id": "KPI_044",
+    "kpi_name": "Working Capital Turnover",
+    "definition": "Working Capital Turnover as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Working Capital Turnover.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Working Capital Turnover"
+    ]
+  },
+  {
+    "kpi_id": "KPI_045",
+    "kpi_name": "Book Value Per Share",
+    "definition": "Book Value Per Share as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Book Value Per Share.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Book Value Per Share"
+    ]
+  },
+  {
+    "kpi_id": "KPI_046",
+    "kpi_name": "Dividend Per Share",
+    "definition": "Dividend Per Share as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Dividend Per Share.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Dividend Per Share"
+    ]
+  },
+  {
+    "kpi_id": "KPI_047",
+    "kpi_name": "Dividend Payout Ratio",
+    "definition": "Dividend Payout Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Dividend Payout Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Dividend Payout Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_048",
+    "kpi_name": "Net Debt",
+    "definition": "Net Debt as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Debt.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Debt"
+    ]
+  },
+  {
+    "kpi_id": "KPI_049",
+    "kpi_name": "Net Debt to EBITDA",
+    "definition": "Net Debt to EBITDA as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Debt to EBITDA.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "All"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Debt to EBITDA"
+    ]
+  },
+  {
+    "kpi_id": "KPI_050",
+    "kpi_name": "Cash and Cash Equivalents",
+    "definition": "Cash and Cash Equivalents as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Cash and Cash Equivalents.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Cash and Cash Equivalents"
+    ]
+  },
+  {
+    "kpi_id": "KPI_051",
+    "kpi_name": "Loan Book",
+    "definition": "Loan Book as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Loan Book.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Loan Book"
+    ]
+  },
+  {
+    "kpi_id": "KPI_052",
+    "kpi_name": "Net Interest Income",
+    "definition": "Net Interest Income as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Interest Income.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Interest Income"
+    ]
+  },
+  {
+    "kpi_id": "KPI_053",
+    "kpi_name": "Net Interest Margin",
+    "definition": "Net Interest Margin as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Interest Margin.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Interest Margin"
+    ]
+  },
+  {
+    "kpi_id": "KPI_054",
+    "kpi_name": "Cost to Income Ratio",
+    "definition": "Cost to Income Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Cost to Income Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Cost to Income Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_055",
+    "kpi_name": "Gross NPA Ratio",
+    "definition": "Gross NPA Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Gross NPA Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Gross NPA Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_056",
+    "kpi_name": "Net NPA Ratio",
+    "definition": "Net NPA Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net NPA Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net NPA Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_057",
+    "kpi_name": "Capital Adequacy Ratio",
+    "definition": "Capital Adequacy Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Capital Adequacy Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Capital Adequacy Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_058",
+    "kpi_name": "Provision Coverage Ratio",
+    "definition": "Provision Coverage Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Provision Coverage Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Provision Coverage Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_059",
+    "kpi_name": "CASA Ratio",
+    "definition": "CASA Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for CASA Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "CASA Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_060",
+    "kpi_name": "Assets Under Management",
+    "definition": "Assets Under Management as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Assets Under Management.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Assets Under Management"
+    ]
+  },
+  {
+    "kpi_id": "KPI_061",
+    "kpi_name": "Gross Written Premium",
+    "definition": "Gross Written Premium as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Gross Written Premium.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Gross Written Premium"
+    ]
+  },
+  {
+    "kpi_id": "KPI_062",
+    "kpi_name": "Net Written Premium",
+    "definition": "Net Written Premium as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Written Premium.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Written Premium"
+    ]
+  },
+  {
+    "kpi_id": "KPI_063",
+    "kpi_name": "Combined Ratio",
+    "definition": "Combined Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Combined Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Combined Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_064",
+    "kpi_name": "Loss Ratio",
+    "definition": "Loss Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Loss Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Loss Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_065",
+    "kpi_name": "Expense Ratio",
+    "definition": "Expense Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Expense Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Expense Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_066",
+    "kpi_name": "Solvency Ratio",
+    "definition": "Solvency Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Solvency Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Solvency Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_067",
+    "kpi_name": "Occupancy Rate",
+    "definition": "Occupancy Rate as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Occupancy Rate.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Occupancy Rate"
+    ]
+  },
+  {
+    "kpi_id": "KPI_068",
+    "kpi_name": "Average Daily Rate",
+    "definition": "Average Daily Rate as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Average Daily Rate.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Average Daily Rate"
+    ]
+  },
+  {
+    "kpi_id": "KPI_069",
+    "kpi_name": "Revenue per Available Room",
+    "definition": "Revenue per Available Room as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Revenue per Available Room.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Revenue per Available Room"
+    ]
+  },
+  {
+    "kpi_id": "KPI_070",
+    "kpi_name": "Same Store Sales Growth",
+    "definition": "Same Store Sales Growth as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Same Store Sales Growth.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Same Store Sales Growth"
+    ]
+  },
+  {
+    "kpi_id": "KPI_071",
+    "kpi_name": "Average Basket Size",
+    "definition": "Average Basket Size as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Average Basket Size.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Average Basket Size"
+    ]
+  },
+  {
+    "kpi_id": "KPI_072",
+    "kpi_name": "Inventory Sell Through",
+    "definition": "Inventory Sell Through as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Inventory Sell Through.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Inventory Sell Through"
+    ]
+  },
+  {
+    "kpi_id": "KPI_073",
+    "kpi_name": "Monthly Recurring Revenue",
+    "definition": "Monthly Recurring Revenue as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Monthly Recurring Revenue.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Monthly Recurring Revenue"
+    ]
+  },
+  {
+    "kpi_id": "KPI_074",
+    "kpi_name": "Annual Recurring Revenue",
+    "definition": "Annual Recurring Revenue as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Annual Recurring Revenue.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Annual Recurring Revenue"
+    ]
+  },
+  {
+    "kpi_id": "KPI_075",
+    "kpi_name": "Customer Acquisition Cost",
+    "definition": "Customer Acquisition Cost as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Customer Acquisition Cost.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Customer Acquisition Cost"
+    ]
+  },
+  {
+    "kpi_id": "KPI_076",
+    "kpi_name": "Customer Lifetime Value",
+    "definition": "Customer Lifetime Value as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Customer Lifetime Value.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Customer Lifetime Value"
+    ]
+  },
+  {
+    "kpi_id": "KPI_077",
+    "kpi_name": "Net Revenue Retention",
+    "definition": "Net Revenue Retention as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Net Revenue Retention.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Net Revenue Retention"
+    ]
+  },
+  {
+    "kpi_id": "KPI_078",
+    "kpi_name": "Churn Rate",
+    "definition": "Churn Rate as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Churn Rate.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Churn Rate"
+    ]
+  },
+  {
+    "kpi_id": "KPI_079",
+    "kpi_name": "Average Revenue Per User",
+    "definition": "Average Revenue Per User as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Average Revenue Per User.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Average Revenue Per User"
+    ]
+  },
+  {
+    "kpi_id": "KPI_080",
+    "kpi_name": "Subscriber Count",
+    "definition": "Subscriber Count as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Subscriber Count.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Subscriber Count"
+    ]
+  },
+  {
+    "kpi_id": "KPI_081",
+    "kpi_name": "Data Usage Per Subscriber",
+    "definition": "Data Usage Per Subscriber as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Data Usage Per Subscriber.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Data Usage Per Subscriber"
+    ]
+  },
+  {
+    "kpi_id": "KPI_082",
+    "kpi_name": "Plant Capacity Utilization",
+    "definition": "Plant Capacity Utilization as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Plant Capacity Utilization.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Plant Capacity Utilization"
+    ]
+  },
+  {
+    "kpi_id": "KPI_083",
+    "kpi_name": "Overall Equipment Effectiveness",
+    "definition": "Overall Equipment Effectiveness as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Overall Equipment Effectiveness.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Overall Equipment Effectiveness"
+    ]
+  },
+  {
+    "kpi_id": "KPI_084",
+    "kpi_name": "Production Volume",
+    "definition": "Production Volume as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Production Volume.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Production Volume"
+    ]
+  },
+  {
+    "kpi_id": "KPI_085",
+    "kpi_name": "Yield",
+    "definition": "Yield as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Yield.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Yield"
+    ]
+  },
+  {
+    "kpi_id": "KPI_086",
+    "kpi_name": "Scrap Rate",
+    "definition": "Scrap Rate as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Scrap Rate.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Scrap Rate"
+    ]
+  },
+  {
+    "kpi_id": "KPI_087",
+    "kpi_name": "Order Backlog",
+    "definition": "Order Backlog as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Order Backlog.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Order Backlog"
+    ]
+  },
+  {
+    "kpi_id": "KPI_088",
+    "kpi_name": "On Time Delivery",
+    "definition": "On Time Delivery as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for On Time Delivery.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "On Time Delivery"
+    ]
+  },
+  {
+    "kpi_id": "KPI_089",
+    "kpi_name": "Employee Headcount",
+    "definition": "Employee Headcount as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Employee Headcount.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Employee Headcount"
+    ]
+  },
+  {
+    "kpi_id": "KPI_090",
+    "kpi_name": "Employee Attrition Rate",
+    "definition": "Employee Attrition Rate as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Employee Attrition Rate.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Employee Attrition Rate"
+    ]
+  },
+  {
+    "kpi_id": "KPI_091",
+    "kpi_name": "Lost Time Injury Frequency Rate",
+    "definition": "Lost Time Injury Frequency Rate as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Lost Time Injury Frequency Rate.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Lost Time Injury Frequency Rate"
+    ]
+  },
+  {
+    "kpi_id": "KPI_092",
+    "kpi_name": "Scope 1 Emissions",
+    "definition": "Scope 1 Emissions as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Scope 1 Emissions.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Scope 1 Emissions"
+    ]
+  },
+  {
+    "kpi_id": "KPI_093",
+    "kpi_name": "Scope 2 Emissions",
+    "definition": "Scope 2 Emissions as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Scope 2 Emissions.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Scope 2 Emissions"
+    ]
+  },
+  {
+    "kpi_id": "KPI_094",
+    "kpi_name": "Water Withdrawal",
+    "definition": "Water Withdrawal as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Water Withdrawal.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Water Withdrawal"
+    ]
+  },
+  {
+    "kpi_id": "KPI_095",
+    "kpi_name": "Energy Consumption",
+    "definition": "Energy Consumption as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Energy Consumption.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Energy Consumption"
+    ]
+  },
+  {
+    "kpi_id": "KPI_096",
+    "kpi_name": "Waste Recycled",
+    "definition": "Waste Recycled as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Waste Recycled.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Waste Recycled"
+    ]
+  },
+  {
+    "kpi_id": "KPI_097",
+    "kpi_name": "Board Independence",
+    "definition": "Board Independence as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Board Independence.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Board Independence"
+    ]
+  },
+  {
+    "kpi_id": "KPI_098",
+    "kpi_name": "Female Board Representation",
+    "definition": "Female Board Representation as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Female Board Representation.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Female Board Representation"
+    ]
+  },
+  {
+    "kpi_id": "KPI_099",
+    "kpi_name": "Executive Compensation Ratio",
+    "definition": "Executive Compensation Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Executive Compensation Ratio.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Executive Compensation Ratio"
+    ]
+  },
+  {
+    "kpi_id": "KPI_100",
+    "kpi_name": "Carbon Intensity",
+    "definition": "Carbon Intensity as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Carbon Intensity.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Carbon Intensity"
+    ]
+  },
+  {
+    "kpi_id": "KPI_101",
+    "kpi_name": "Renewable Energy Usage",
+    "definition": "Renewable Energy Usage as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Renewable Energy Usage.",
+    "canonical_sections": [
+      "Financial Highlights",
+      "Management Discussion and Analysis",
+      "Statement of Profit and Loss",
+      "Balance Sheet",
+      "Statement of Cash Flows",
+      "Notes to Financial Statements"
+    ],
+    "applicable_industries": [
+      "Industry Specific",
+      "Financial Services",
+      "Manufacturing",
+      "Retail",
+      "Hospitality",
+      "Technology",
+      "Telecommunications",
+      "Energy"
+    ],
+    "applicable_report_types": [
+      "Annual Report",
+      "Quarterly Report",
+      "Regulatory Filing",
+      "Investor Presentation"
+    ],
+    "applicable_accounting_standards": [
+      "IFRS",
+      "Ind AS",
+      "US GAAP"
+    ],
+    "aliases": [
+      "Renewable Energy Usage"
+    ]
+  }
+]

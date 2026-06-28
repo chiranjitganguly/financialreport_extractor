@@ -1,0 +1,22 @@
+[
+  {
+    "footnote_id": "fn_1",
+    "marker": "1",
+    "text": "Total assets include right-of-use assets recognized under Ind AS 116.",
+    "section_name_canonical": "Balance Sheet",
+    "page": 1,
+    "anchors": [
+      {"element_type": "table_cell", "element_id": "tbl_002", "location": "row: Total Assets, col: FY2025"}
+    ]
+  },
+  {
+    "footnote_id": "fn_2",
+    "marker": "2",
+    "text": "Includes proceeds from divestment of subsidiary completed in Q4 FY2025.",
+    "section_name_canonical": "Statement of Cash Flows",
+    "page": 10,
+    "anchors": [
+      {"element_type": "chart", "element_id": "chrt_002", "location": "caption"}
+    ]
+  }
+]

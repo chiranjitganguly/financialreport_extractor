@@ -1,0 +1,38 @@
+[
+  {
+    "company_name": "British Telecom Group",
+    "industry": "Telecommunications",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "British Telecom Holdings",
+    "industry": "Telecommunications",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Acme Manufacturing Inc",
+    "industry": "Manufacturing",
+    "accounting_standard": "US-GAAP",
+    "country": "United States"
+  },
+  {
+    "company_name": "Tata Consultancy Services",
+    "industry": "Technology",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Global Retail Corp",
+    "industry": "Retail",
+    "accounting_standard": null,
+    "country": "United States"
+  },
+  {
+    "company_name": "Global Retail Holdings",
+    "industry": "Retail",
+    "accounting_standard": null,
+    "country": "United States"
+  }
+]

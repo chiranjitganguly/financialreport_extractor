@@ -1,0 +1,250 @@
+{
+  "validation_rules": [
+    {
+      "rule_id": "GEN_001",
+      "rule_name": "Non Negative Revenue",
+      "industry": ["all"],
+      "kpi": "revenue",
+      "validation_type": "range_check",
+      "severity": "critical",
+      "condition": "value >= 0",
+      "error_message": "Revenue cannot be negative."
+    },
+    {
+      "rule_id": "GEN_002",
+      "rule_name": "Percentage Range Check",
+      "industry": ["all"],
+      "kpi": "*_pct",
+      "validation_type": "range_check",
+      "severity": "high",
+      "condition": "value >= 0 AND value <= 100",
+      "exceptions": [
+        "revenue_growth_pct",
+        "profit_growth_pct",
+        "stock_return_pct"
+      ],
+      "error_message": "Percentage KPI outside valid range."
+    },
+    {
+      "rule_id": "GEN_003",
+      "rule_name": "Employee Count Integer",
+      "industry": ["all"],
+      "kpi": "employee_count",
+      "validation_type": "datatype_check",
+      "severity": "high",
+      "condition": "is_integer(value) AND value > 0",
+      "error_message": "Employee count must be a positive integer."
+    },
+    {
+      "rule_id": "FIN_001",
+      "rule_name": "Gross Profit Reconciliation",
+      "industry": [
+        "manufacturing",
+        "retail",
+        "hospitality",
+        "services"
+      ],
+      "kpi": "gross_profit",
+      "validation_type": "reconciliation",
+      "severity": "critical",
+      "formula": "revenue - cost_of_goods_sold",
+      "dependencies": [
+        "revenue",
+        "cost_of_goods_sold"
+      ],
+      "tolerance_pct": 1.0,
+      "error_message": "Gross profit does not reconcile."
+    },
+    {
+      "rule_id": "FIN_002",
+      "rule_name": "EBITDA Reconciliation",
+      "industry": [
+        "manufacturing",
+        "services",
+        "retail",
+        "hospitality"
+      ],
+      "kpi": "ebitda",
+      "validation_type": "reconciliation",
+      "severity": "critical",
+      "formula": "operating_profit + depreciation + amortization",
+      "dependencies": [
+        "operating_profit",
+        "depreciation",
+        "amortization"
+      ],
+      "tolerance_pct": 1.0,
+      "error_message": "EBITDA does not reconcile."
+    },
+    {
+      "rule_id": "FIN_003",
+      "rule_name": "Net Margin Validation",
+      "industry": ["all"],
+      "kpi": "net_margin_pct",
+      "validation_type": "formula_check",
+      "severity": "high",
+      "formula": "(net_income / revenue) * 100",
+      "dependencies": [
+        "net_income",
+        "revenue"
+      ],
+      "tolerance_pct": 0.5,
+      "error_message": "Net margin calculation mismatch."
+    },
+    {
+      "rule_id": "BANK_001",
+      "rule_name": "NIM Validation",
+      "industry": ["banking"],
+      "kpi": "net_interest_margin_pct",
+      "validation_type": "formula_check",
+      "severity": "critical",
+      "formula": "(net_interest_income / average_earning_assets) * 100",
+      "dependencies": [
+        "net_interest_income",
+        "average_earning_assets"
+      ],
+      "tolerance_pct": 0.25,
+      "error_message": "Net interest margin mismatch."
+    },
+    {
+      "rule_id": "BANK_002",
+      "rule_name": "Capital Adequacy Range",
+      "industry": ["banking"],
+      "kpi": "capital_adequacy_ratio_pct",
+      "validation_type": "range_check",
+      "severity": "critical",
+      "condition": "value >= 8",
+      "error_message": "Capital adequacy ratio below regulatory threshold."
+    },
+    {
+      "rule_id": "BANK_003",
+      "rule_name": "Gross NPA Less Than Advances",
+      "industry": ["banking"],
+      "kpi": "gross_npa",
+      "validation_type": "business_rule",
+      "severity": "critical",
+      "condition": "gross_npa <= gross_advances",
+      "error_message": "Gross NPA exceeds advances."
+    },
+    {
+      "rule_id": "INS_001",
+      "rule_name": "Combined Ratio Validation",
+      "industry": ["insurance"],
+      "kpi": "combined_ratio_pct",
+      "validation_type": "formula_check",
+      "severity": "critical",
+      "formula": "loss_ratio_pct + expense_ratio_pct",
+      "dependencies": [
+        "loss_ratio_pct",
+        "expense_ratio_pct"
+      ],
+      "tolerance_pct": 0.5,
+      "error_message": "Combined ratio mismatch."
+    },
+    {
+      "rule_id": "INS_002",
+      "rule_name": "Claims Paid Less Than Premium Base",
+      "industry": ["insurance"],
+      "kpi": "claims_paid",
+      "validation_type": "business_rule",
+      "severity": "high",
+      "condition": "claims_paid <= gross_written_premium * 3",
+      "error_message": "Claims paid unusually high."
+    },
+    {
+      "rule_id": "MFG_001",
+      "rule_name": "Inventory Turnover Validation",
+      "industry": ["manufacturing"],
+      "kpi": "inventory_turnover",
+      "validation_type": "formula_check",
+      "severity": "high",
+      "formula": "cost_of_goods_sold / average_inventory",
+      "dependencies": [
+        "cost_of_goods_sold",
+        "average_inventory"
+      ],
+      "tolerance_pct": 1.0,
+      "error_message": "Inventory turnover mismatch."
+    },
+    {
+      "rule_id": "MFG_002",
+      "rule_name": "Capacity Utilization Range",
+      "industry": ["manufacturing"],
+      "kpi": "capacity_utilization_pct",
+      "validation_type": "range_check",
+      "severity": "high",
+      "condition": "value >= 0 AND value <= 100",
+      "error_message": "Capacity utilization outside valid range."
+    },
+    {
+      "rule_id": "HOTEL_001",
+      "rule_name": "RevPAR Validation",
+      "industry": ["hospitality"],
+      "kpi": "revpar",
+      "validation_type": "formula_check",
+      "severity": "critical",
+      "formula": "adr * occupancy_rate_pct / 100",
+      "dependencies": [
+        "adr",
+        "occupancy_rate_pct"
+      ],
+      "tolerance_pct": 1.0,
+      "error_message": "RevPAR mismatch."
+    },
+    {
+      "rule_id": "HOTEL_002",
+      "rule_name": "Occupancy Range",
+      "industry": ["hospitality"],
+      "kpi": "occupancy_rate_pct",
+      "validation_type": "range_check",
+      "severity": "high",
+      "condition": "value >= 0 AND value <= 100",
+      "error_message": "Occupancy rate outside valid range."
+    },
+    {
+      "rule_id": "SRV_001",
+      "rule_name": "Revenue Per Employee",
+      "industry": ["services"],
+      "kpi": "revenue_per_employee",
+      "validation_type": "formula_check",
+      "severity": "medium",
+      "formula": "revenue / employee_count",
+      "dependencies": [
+        "revenue",
+        "employee_count"
+      ],
+      "tolerance_pct": 1.0,
+      "error_message": "Revenue per employee mismatch."
+    },
+    {
+      "rule_id": "LLM_001",
+      "rule_name": "Multi Source Confirmation",
+      "industry": ["all"],
+      "kpi": "*",
+      "validation_type": "extraction_validation",
+      "severity": "high",
+      "condition": "source_occurrences >= 2",
+      "error_message": "KPI found in only one location."
+    },
+    {
+      "rule_id": "LLM_002",
+      "rule_name": "Unit Consistency",
+      "industry": ["all"],
+      "kpi": "*",
+      "validation_type": "semantic_validation",
+      "severity": "critical",
+      "condition": "all_units_same",
+      "error_message": "Mixed units detected across report."
+    },
+    {
+      "rule_id": "LLM_003",
+      "rule_name": "Year Over Year Outlier",
+      "industry": ["all"],
+      "kpi": "*",
+      "validation_type": "anomaly_detection",
+      "severity": "medium",
+      "condition": "abs(yoy_change_pct) <= 500",
+      "error_message": "Unusually large year-over-year movement."
+    }
+  ]
+}

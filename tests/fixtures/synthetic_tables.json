@@ -1,0 +1,48 @@
+[
+  {
+    "table_id": "tbl_001",
+    "caption": "Summary Financials",
+    "section_name_canonical": "Statement of Profit and Loss",
+    "page": 2,
+    "rows": [
+      {
+        "row_label": "Revenue",
+        "cells": [
+          {"column_label": "FY2025", "value": "10000", "footnote_refs": []},
+          {"column_label": "FY2024", "value": "9000", "footnote_refs": []}
+        ]
+      }
+    ],
+    "footnote_refs": []
+  },
+  {
+    "table_id": "tbl_002",
+    "caption": "Balance Sheet",
+    "section_name_canonical": "Balance Sheet",
+    "page": 5,
+    "rows": [
+      {
+        "row_label": "Total Assets",
+        "cells": [
+          {"column_label": "FY2025", "value": "50000", "footnote_refs": ["fn_1"]}
+        ]
+      }
+    ],
+    "footnote_refs": ["fn_1"]
+  },
+  {
+    "table_id": "tbl_003",
+    "caption": "Notes Detail",
+    "section_name_canonical": "Notes to Financial Statements",
+    "page": 9,
+    "rows": [
+      {
+        "row_label": "Depreciation",
+        "cells": [
+          {"column_label": "FY2025", "value": "500", "footnote_refs": []}
+        ]
+      }
+    ],
+    "footnote_refs": []
+  }
+]

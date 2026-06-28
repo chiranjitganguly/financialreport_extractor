@@ -1,0 +1,308 @@
+[
+  {
+    "company_name": "Apple Inc.",
+    "industry": "Technology",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Microsoft Corporation",
+    "industry": "Technology",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Alphabet Inc.",
+    "industry": "Technology",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Amazon.com, Inc.",
+    "industry": "Retail",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Meta Platforms, Inc.",
+    "industry": "Technology",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Tesla, Inc.",
+    "industry": "Automotive",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "JPMorgan Chase & Co.",
+    "industry": "Financial Services",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Bank of America Corporation",
+    "industry": "Financial Services",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Goldman Sachs Group, Inc.",
+    "industry": "Financial Services",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "The Coca-Cola Company",
+    "industry": "Consumer Goods",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "PepsiCo, Inc.",
+    "industry": "Consumer Goods",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "The Procter & Gamble Company",
+    "industry": "Consumer Goods",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Johnson & Johnson",
+    "industry": "Healthcare",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Pfizer Inc.",
+    "industry": "Healthcare",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Exxon Mobil Corporation",
+    "industry": "Energy",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Chevron Corporation",
+    "industry": "Energy",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Walmart Inc.",
+    "industry": "Retail",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Costco Wholesale Corporation",
+    "industry": "Retail",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "UnitedHealth Group Incorporated",
+    "industry": "Healthcare",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "Intel Corporation",
+    "industry": "Technology",
+    "accounting_standard": "US-GAAP",
+    "country": "USA"
+  },
+  {
+    "company_name": "HSBC Holdings plc",
+    "industry": "Financial Services",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "BP plc",
+    "industry": "Energy",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Shell plc",
+    "industry": "Energy",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Unilever PLC",
+    "industry": "Consumer Goods",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "AstraZeneca PLC",
+    "industry": "Healthcare",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "GSK plc",
+    "industry": "Healthcare",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Barclays PLC",
+    "industry": "Financial Services",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Lloyds Banking Group plc",
+    "industry": "Financial Services",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Rio Tinto plc",
+    "industry": "Mining",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Vodafone Group Plc",
+    "industry": "Telecommunications",
+    "accounting_standard": "IFRS",
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Tata Consultancy Services Limited",
+    "industry": "Technology",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Infosys Limited",
+    "industry": "Technology",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Wipro Limited",
+    "industry": "Technology",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Reliance Industries Limited",
+    "industry": "Energy",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "HDFC Bank Limited",
+    "industry": "Financial Services",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "ICICI Bank Limited",
+    "industry": "Financial Services",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "State Bank of India",
+    "industry": "Financial Services",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Axis Bank Limited",
+    "industry": "Financial Services",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Larsen & Toubro Limited",
+    "industry": "Manufacturing",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Mahindra & Mahindra Limited",
+    "industry": "Automotive",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Maruti Suzuki India Limited",
+    "industry": "Automotive",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Sun Pharmaceutical Industries Limited",
+    "industry": "Healthcare",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "UltraTech Cement Limited",
+    "industry": "Manufacturing",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+{
+    "company_name": "SonaComstar Limited",
+    "industry": "Manufacturing",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "ITC Limited",
+    "industry": "Consumer Goods",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Bharti Airtel Limited",
+    "industry": "Telecommunications",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Adani Ports and Special Economic Zone Limited",
+    "industry": "Logistics",
+    "accounting_standard": "IND-AS",
+    "country": "India"
+  },
+  {
+    "company_name": "Zomato Limited",
+    "industry": "Technology",
+    "accounting_standard": null,
+    "country": "India"
+  },
+  {
+    "company_name": "Rolls-Royce Holdings plc",
+    "industry": "Manufacturing",
+    "accounting_standard": null,
+    "country": "United Kingdom"
+  },
+  {
+    "company_name": "Airbnb, Inc.",
+    "industry": "Hospitality",
+    "accounting_standard": null,
+    "country": "USA"
+  },
+  {
+    "company_name": "Stripe, Inc.",
+    "industry": "Financial Services",
+    "accounting_standard": null,
+    "country": "USA"
+  }
+]

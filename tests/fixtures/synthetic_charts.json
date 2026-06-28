@@ -1,0 +1,22 @@
+[
+  {
+    "chart_id": "chrt_001",
+    "caption": "Revenue Trend",
+    "section_name_canonical": "Management Discussion and Analysis",
+    "page": 7,
+    "image_ref": "images/chart_revenue_trend.png",
+    "interpretation": "Bar chart showing annual revenue from FY2021 to FY2025. Revenue grew from 6000 in FY2021 to 10000 in FY2025.",
+    "interpretation_confidence": 0.92,
+    "footnote_refs": []
+  },
+  {
+    "chart_id": "chrt_002",
+    "caption": "Cash Flow Summary",
+    "section_name_canonical": "Statement of Cash Flows",
+    "page": 13,
+    "image_ref": "images/chart_cash_flow.png",
+    "interpretation": "Stacked bar showing operating, investing and financing cash flows for FY2025.",
+    "interpretation_confidence": 0.88,
+    "footnote_refs": ["fn_2"]
+  }
+]

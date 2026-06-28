@@ -1,0 +1,52 @@
+[
+  {
+    "kpi_id": "rev_001",
+    "kpi_name": "Total Revenue",
+    "definition": "Total revenue / net sales earned by the company in the fiscal year.",
+    "canonical_sections": ["income_statement", "financial_highlights"],
+    "applicable_industries": [],
+    "applicable_report_types": [],
+    "applicable_accounting_standards": [],
+    "aliases": ["Net Revenue", "Net Sales", "Revenue from Operations"]
+  },
+  {
+    "kpi_id": "pat_001",
+    "kpi_name": "Profit After Tax",
+    "definition": "Net income after all taxes for the fiscal year.",
+    "canonical_sections": ["income_statement"],
+    "applicable_industries": [],
+    "applicable_report_types": [],
+    "applicable_accounting_standards": [],
+    "aliases": ["Net Profit", "Net Income", "PAT"]
+  },
+  {
+    "kpi_id": "ebitda_001",
+    "kpi_name": "EBITDA",
+    "definition": "Earnings before interest, taxes, depreciation, and amortisation.",
+    "canonical_sections": ["income_statement", "management_discussion"],
+    "applicable_industries": [],
+    "applicable_report_types": [],
+    "applicable_accounting_standards": [],
+    "aliases": ["Adjusted EBITDA", "Operating EBITDA"]
+  },
+  {
+    "kpi_id": "bank_npa_001",
+    "kpi_name": "Gross NPA Ratio",
+    "definition": "Gross non-performing assets as a percentage of gross advances.",
+    "canonical_sections": ["asset_quality"],
+    "applicable_industries": ["Banking"],
+    "applicable_report_types": ["annual_report"],
+    "applicable_accounting_standards": [],
+    "aliases": ["GNPA Ratio", "Gross NPA %"]
+  },
+  {
+    "kpi_id": "ifrs_only_001",
+    "kpi_name": "IFRS Lease Liability",
+    "definition": "Present value of future lease payments under IFRS 16.",
+    "canonical_sections": ["balance_sheet", "notes_to_accounts"],
+    "applicable_industries": [],
+    "applicable_report_types": [],
+    "applicable_accounting_standards": ["IFRS"],
+    "aliases": ["Lease Obligation", "Right-of-use Liability"]
+  }
+]
