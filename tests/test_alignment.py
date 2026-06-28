@@ -30,7 +30,11 @@ _VOCAB = [
 
 
 def _make_llm_mock(return_value):
-    """Return a patched 'llm' whose chain call returns *return_value*."""
+    """Return a mock LLM whose chain call returns *return_value*.
+
+    Patches section_parser.alignment.get_llm (the factory function) rather than
+    a module-level singleton, since alignment.py now calls get_llm() lazily.
+    """
     async def _fake_chain(_inputs):
         return return_value
 
@@ -123,7 +127,7 @@ class TestBatchAlignSectionsLlm:
         fake_result = MagicMock()
         fake_result.alignments = [entry]
 
-        with patch("section_parser.alignment.llm", _make_llm_mock(fake_result)):
+        with patch("section_parser.alignment.get_llm", return_value=_make_llm_mock(fake_result)):
             results = await batch_align_sections_llm(
                 unresolved=[("P&L Statement", "Revenue and expense details...")],
                 vocabulary=_VOCAB,
@@ -143,7 +147,7 @@ class TestBatchAlignSectionsLlm:
         fake_result = MagicMock()
         fake_result.alignments = [entry]
 
-        with patch("section_parser.alignment.llm", _make_llm_mock(fake_result)):
+        with patch("section_parser.alignment.get_llm", return_value=_make_llm_mock(fake_result)):
             results = await batch_align_sections_llm(
                 unresolved=[("Cash Flows", "Cash from operations...")],
                 vocabulary=_VOCAB,
@@ -161,7 +165,7 @@ class TestBatchAlignSectionsLlm:
         fake_result = MagicMock()
         fake_result.alignments = [entry]  # Only one entry, not two
 
-        with patch("section_parser.alignment.llm", _make_llm_mock(fake_result)):
+        with patch("section_parser.alignment.get_llm", return_value=_make_llm_mock(fake_result)):
             results = await batch_align_sections_llm(
                 unresolved=[
                     ("Cash Flows", "Cash content"),
@@ -200,7 +204,7 @@ class TestBatchAlignSectionsLlm:
         mock_llm = MagicMock()
         mock_llm.with_structured_output.return_value.with_retry.return_value = fake_runnable
 
-        with patch("section_parser.alignment.llm", mock_llm):
+        with patch("section_parser.alignment.get_llm", return_value=mock_llm):
             results = await batch_align_sections_llm(
                 unresolved=[("MDA", "Analysis..."), ("Notes", "Note 1...")],
                 vocabulary=_VOCAB,
@@ -227,7 +231,7 @@ class TestRealignSectionLowConfidence:
             source="llm_fallback",
         )
 
-        with patch("section_parser.alignment.llm", _make_llm_mock(fake_result)):
+        with patch("section_parser.alignment.get_llm", return_value=_make_llm_mock(fake_result)):
             result = await realign_section_low_confidence(
                 section_name_raw="Assets and Liabilities",
                 content_excerpt="Total assets 50000, Total liabilities 30000...",
@@ -248,7 +252,7 @@ class TestRealignSectionLowConfidence:
             source="llm_fallback",
         )
 
-        with patch("section_parser.alignment.llm", _make_llm_mock(fake_result)):
+        with patch("section_parser.alignment.get_llm", return_value=_make_llm_mock(fake_result)):
             result = await realign_section_low_confidence(
                 section_name_raw="Assets and Liabilities",
                 content_excerpt="Extensive balance sheet content...",
@@ -270,7 +274,7 @@ class TestRealignSectionLowConfidence:
             source="llm_fallback",
         )
 
-        with patch("section_parser.alignment.llm", _make_llm_mock(fake_result)):
+        with patch("section_parser.alignment.get_llm", return_value=_make_llm_mock(fake_result)):
             result = await realign_section_low_confidence(
                 section_name_raw="Notes",
                 content_excerpt="Note 1: Accounting policies...",

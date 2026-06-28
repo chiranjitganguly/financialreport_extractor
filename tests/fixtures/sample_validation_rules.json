@@ -1,0 +1,34 @@
+[
+  {
+    "rule_id": "TALLY_BALANCED",
+    "description": "net_income = revenue - expenses (exactly balancing)",
+    "rule_type": "tally",
+    "formula": "abs(KPI_NET - (KPI_REV - KPI_EXP)) <= tolerance",
+    "participating_kpi_ids": ["KPI_NET", "KPI_REV", "KPI_EXP"],
+    "tolerance": 0.01
+  },
+  {
+    "rule_id": "TALLY_UNBALANCED",
+    "description": "net_income = revenue - expenses (deliberately broken)",
+    "rule_type": "tally",
+    "formula": "abs(KPI_NET - (KPI_REV - KPI_EXP)) <= tolerance",
+    "participating_kpi_ids": ["KPI_NET", "KPI_REV", "KPI_EXP"],
+    "tolerance": 0.01
+  },
+  {
+    "rule_id": "TALLY_MISSING_OPERAND",
+    "description": "rule with a participant that has no value (skipped path)",
+    "rule_type": "tally",
+    "formula": "abs(KPI_NET - KPI_MISSING) <= tolerance",
+    "participating_kpi_ids": ["KPI_NET", "KPI_MISSING"],
+    "tolerance": 0.01
+  },
+  {
+    "rule_id": "BOUND_POSITIVE",
+    "description": "margin must be between 0 and 100",
+    "rule_type": "plausibility_bound",
+    "formula": "0 <= KPI_MARGIN and KPI_MARGIN <= 100",
+    "participating_kpi_ids": ["KPI_MARGIN"],
+    "tolerance": 0.0
+  }
+]

@@ -23,6 +23,10 @@ COPY vector_indexer/ ./vector_indexer/
 COPY deterministic_extractor/ ./deterministic_extractor/
 COPY semantic_retriever/ ./semantic_retriever/
 COPY llm_extractor/ ./llm_extractor/
+COPY consolidation/ ./consolidation/
+COPY retry_controller/ ./retry_controller/
+COPY validator/ ./validator/
+COPY validation_retry_loop.py .
 COPY alembic/ ./alembic/
 COPY alembic.ini .
 COPY data/ ./data/

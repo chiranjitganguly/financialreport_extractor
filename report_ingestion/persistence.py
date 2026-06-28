@@ -5,7 +5,7 @@ from typing import Any
 
 from pydantic import BaseModel
 
-from report_ingestion.config import settings
+from common.config import settings as common_settings
 from report_ingestion.hitl_queue import get_pool
 
 log = logging.getLogger(__name__)
@@ -30,7 +30,7 @@ async def save_agent_run(report_id: str, agent_name: str, output: BaseModel) -> 
         agent_name: Canonical agent identifier, e.g. ``"agent1"`` / ``"agent2"``.
         output:     Any Pydantic model returned by an agent's run function.
     """
-    out_dir = Path(settings.OUTPUT_DIR) / report_id
+    out_dir = Path(common_settings.OUTPUT_DIR) / report_id
     out_dir.mkdir(parents=True, exist_ok=True)
 
     output_dict: dict[str, Any] = output.model_dump()
@@ -61,26 +61,31 @@ async def save_agent_run(report_id: str, agent_name: str, output: BaseModel) -> 
     flagged_fields = output_dict.get("flagged_fields", [])
     flagged_json = json.dumps(flagged_fields)
 
-    pool = await get_pool()
-    async with pool.acquire() as conn:
-        await conn.execute(
-            """
-            INSERT INTO agent_runs
-                (report_id, agent_name, status, metadata, flagged_fields, narrative_path)
-            VALUES ($1, $2, $3, $4, $5, $6)
-            """,
-            report_id,
-            agent_name,
-            status,
-            metadata_json,
-            flagged_json,
-            output_file_path,
+    try:
+        pool = await get_pool()
+        async with pool.acquire() as conn:
+            await conn.execute(
+                """
+                INSERT INTO agent_runs
+                    (report_id, agent_name, status, metadata, flagged_fields, narrative_path)
+                VALUES ($1, $2, $3, $4, $5, $6)
+                """,
+                report_id,
+                agent_name,
+                status,
+                metadata_json,
+                flagged_json,
+                output_file_path,
+            )
+        log.info(
+            "Saved %s run for report_id=%s status=%s output_file=%s",
+            agent_name, report_id, status, output_file_path,
         )
-
-    log.info(
-        "Saved %s run for report_id=%s status=%s output_file=%s",
-        agent_name, report_id, status, output_file_path,
-    )
+    except Exception as exc:
+        log.warning(
+            "DB unavailable — skipping persistence for %s run report_id=%s: %s",
+            agent_name, report_id, exc,
+        )
 
 
 async def load_agent_run(report_id: str, agent_name: str) -> dict | None:

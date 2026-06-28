@@ -87,6 +87,11 @@ def get_canonical_section_vocabulary(taxonomy: list[TaxonomyEntry]) -> list[str]
     return sorted(seen)
 
 
+def _norm(s: str) -> str:
+    """Lowercase + strip spaces, dashes, underscores for loose matching."""
+    return s.lower().replace(" ", "").replace("-", "").replace("_", "")
+
+
 def filter_applicable_taxonomy(
     taxonomy: list[TaxonomyEntry],
     report_metadata: ReportMetadata,
@@ -98,6 +103,10 @@ def filter_applicable_taxonomy(
     applies to ALL values for that dimension.  A non-empty field restricts the
     KPI to only the listed values.
 
+    Matching is case-insensitive and ignores spaces/dashes/underscores so that
+    classifier output ("annual_report", "IND-AS") aligns with taxonomy labels
+    ("Annual Report", "Ind AS") without requiring an exact-string match.
+
     Args:
         taxonomy: Full load_taxonomy_map() output.
         report_metadata: This report's industry, report_type, and
@@ -106,17 +115,23 @@ def filter_applicable_taxonomy(
     Returns:
         Filtered list[TaxonomyEntry].
     """
+    meta_industry = _norm(report_metadata.industry or "")
+    meta_report_type = _norm(report_metadata.report_type or "")
+    meta_standard = _norm(report_metadata.accounting_standard or "")
+
     result: list[TaxonomyEntry] = []
     for entry in taxonomy:
-        if entry.applicable_industries and report_metadata.industry not in entry.applicable_industries:
-            continue
-        if entry.applicable_report_types and report_metadata.report_type not in entry.applicable_report_types:
-            continue
-        if (
-            entry.applicable_accounting_standards
-            and report_metadata.accounting_standard not in entry.applicable_accounting_standards
-        ):
-            continue
+        if entry.applicable_industries:
+            normed = [_norm(i) for i in entry.applicable_industries]
+            wildcards = {_norm(w) for w in _INDUSTRY_WILDCARDS}
+            if not any(n in wildcards for n in normed) and meta_industry not in normed:
+                continue
+        if entry.applicable_report_types:
+            if meta_report_type not in [_norm(r) for r in entry.applicable_report_types]:
+                continue
+        if entry.applicable_accounting_standards:
+            if meta_standard not in [_norm(s) for s in entry.applicable_accounting_standards]:
+                continue
         result.append(entry)
     return result
 
@@ -137,7 +152,11 @@ def initialize_extraction_ledger(
         all status="not_found", confidence=0.0.
     """
     records = {
-        entry.kpi_id: ExtractionRecord(kpi_id=entry.kpi_id, fiscal_year=fiscal_year)
+        entry.kpi_id: ExtractionRecord(
+            kpi_id=entry.kpi_id,
+            kpi_name=entry.kpi_name,
+            fiscal_year=fiscal_year,
+        )
         for entry in filtered_taxonomy
     }
     return ExtractionLedger(records=records)

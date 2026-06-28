@@ -1,0 +1,42 @@
+[
+  {
+    "rule_id": "RULE_001",
+    "description": "Gross Profit = Revenue - Cost of Revenue (tally check)",
+    "rule_type": "tally",
+    "formula": "abs(KPI_004 - (KPI_001 - KPI_003)) <= tolerance",
+    "participating_kpi_ids": ["KPI_001", "KPI_003", "KPI_004"],
+    "tolerance": 0.05
+  },
+  {
+    "rule_id": "RULE_002",
+    "description": "EBITDA Margin = EBITDA / Revenue (tally check within 5%)",
+    "rule_type": "tally",
+    "formula": "abs(KPI_011 - (KPI_010 / KPI_001 * 100)) <= tolerance",
+    "participating_kpi_ids": ["KPI_010", "KPI_011", "KPI_001"],
+    "tolerance": 5.0
+  },
+  {
+    "rule_id": "RULE_003",
+    "description": "Net Profit Margin = Net Profit / Revenue (tally check within 5%)",
+    "rule_type": "tally",
+    "formula": "abs(KPI_013 - (KPI_012 / KPI_001 * 100)) <= tolerance",
+    "participating_kpi_ids": ["KPI_012", "KPI_013", "KPI_001"],
+    "tolerance": 5.0
+  },
+  {
+    "rule_id": "RULE_004",
+    "description": "Basic EPS must be positive for profitable companies",
+    "rule_type": "plausibility_bound",
+    "formula": "KPI_015 > -1000",
+    "participating_kpi_ids": ["KPI_015"],
+    "tolerance": 0.0
+  },
+  {
+    "rule_id": "RULE_005",
+    "description": "Current Ratio should be above 0.1 (sanity bound)",
+    "rule_type": "plausibility_bound",
+    "formula": "KPI_026 > 0.1",
+    "participating_kpi_ids": ["KPI_026"],
+    "tolerance": 0.0
+  }
+]

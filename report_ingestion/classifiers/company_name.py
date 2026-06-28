@@ -1,4 +1,4 @@
-from report_ingestion.llm_client import llm
+from report_ingestion.llm_client import get_llm
 from report_ingestion.prompts import COMPANY_NAME_PROMPT
 from report_ingestion.schemas import CompanyNameResult
 
@@ -19,5 +19,5 @@ async def extract_company_name_llm(excerpt: str) -> CompanyNameResult:
         it appears on the cover/title page (not a subsidiary or auditor name)
         and the model's self-reported confidence.
     """
-    chain = COMPANY_NAME_PROMPT | llm.with_structured_output(CompanyNameResult).with_retry()
+    chain = COMPANY_NAME_PROMPT | get_llm().with_structured_output(CompanyNameResult).with_retry()
     return await chain.ainvoke({"excerpt": excerpt})

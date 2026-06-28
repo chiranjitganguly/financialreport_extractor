@@ -31,11 +31,16 @@ def get_llm_client(
     model: str = "gpt-4o-mini",
     provider: str = "openai",
     temperature: float = 0.0,
+    agent_name: str = "unknown",
 ) -> BaseChatModel:
     """Return a LangChain chat model for the given provider and model.
 
     API keys are sourced from common.config (which reads .env) so callers
     never need to handle credentials — they only configure model and provider.
+
+    If a TokenUsageTracker is active in the current context (activated via
+    TokenUsageTracker.activate() at pipeline startup), a callback handler is
+    automatically attached to record token usage per agent.
 
     Args:
         model: Model identifier (e.g. "gpt-4o", "claude-3-5-sonnet-20241022",
@@ -43,6 +48,8 @@ def get_llm_client(
         provider: One of "openai", "anthropic", "google".
         temperature: Passed through to the model.  Default 0.0 for all
                classification/extraction calls in this pipeline.
+        agent_name: Logical name of the calling agent (used to label token
+               usage records).  Defaults to "unknown" if not supplied.
 
     Returns:
         A LangChain BaseChatModel.  Call .with_structured_output(Schema) and
@@ -51,9 +58,14 @@ def get_llm_client(
     Raises:
         ValueError: If provider is not one of the supported values.
     """
-    # Import here (lazy) to avoid importing common.config at module level,
-    # which would create a circular-import risk if common modules import each other.
     from common.config import settings as _common
+    from common.token_tracker import TokenUsageTracker, TokenTrackingCallbackHandler
+
+    # Build callback list — only if a tracker is active for this pipeline run.
+    callbacks = []
+    tracker = TokenUsageTracker.current()
+    if tracker is not None:
+        callbacks = [TokenTrackingCallbackHandler(agent_name, model, provider)]
 
     if provider == "openai":
         from langchain_openai import ChatOpenAI
@@ -61,6 +73,7 @@ def get_llm_client(
             model=model,
             temperature=temperature,
             api_key=_common.OPENAI_API_KEY or None,
+            callbacks=callbacks or None,
         )
 
     if provider == "anthropic":
@@ -69,6 +82,7 @@ def get_llm_client(
             model=model,
             temperature=temperature,
             api_key=_common.ANTHROPIC_API_KEY or None,
+            callbacks=callbacks or None,
         )
 
     if provider == "google":
@@ -77,6 +91,7 @@ def get_llm_client(
             model=model,
             temperature=temperature,
             google_api_key=_common.GOOGLE_API_KEY or None,
+            callbacks=callbacks or None,
         )
 
     raise ValueError(

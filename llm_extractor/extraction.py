@@ -24,7 +24,7 @@ from typing import Literal, Optional
 from pydantic import BaseModel
 
 from llm_extractor.config import settings
-from llm_extractor.prompts import TIER3_EXTRACTION_PROMPT
+from llm_extractor.prompts import TIER3_EXTRACTION_PROMPT, TIER3_RETRY_PROMPT
 from common.discrepancy_resolution import resolve_cross_section_discrepancy
 from common.llm_client import get_llm_client
 from common.schemas import (
@@ -59,6 +59,7 @@ class Tier3ExtractionResult(BaseModel):
     source_element_type: Optional[Literal["text", "table_cell", "chart"]] = None
     footnote_ids: list[str] = []
     confidence: float = 0.0
+    alias_used: Optional[str] = None  # exact term found in the document
 
 
 class _Tier3BatchOutput(BaseModel):
@@ -167,6 +168,80 @@ def _format_kpi_list(requests: list[Tier3KPIRequest]) -> str:
 # Per-section LLM call
 # ---------------------------------------------------------------------------
 
+def run_llm_extraction_retry_for_kpi(
+    section: Section,
+    kpi_request: Tier3KPIRequest,
+    validator_note: Optional[str] = None,
+) -> Tier3ExtractionResult:
+    """Single-KPI, non-batched LLM call used only by the Retry Controller.
+
+    The normal cascade always batches multiple KPIs into one call per section;
+    this variant is per-KPI so the retry can fold a specific validator note into
+    the prompt (e.g. the tally discrepancy that triggered the retry).
+
+    Args:
+        section: Section to re-examine.
+        kpi_request: The single KPI to find.
+        validator_note: Human-readable note from Agent 7 explaining why the
+            retry was triggered.  When None, falls back to a generic
+            "not found in prior pass" message.
+
+    Returns:
+        Tier3ExtractionResult — found=False if the LLM call fails or returns
+        no result.
+    """
+    context = build_section_context_for_prompt(section)
+    note = validator_note or "Not found in a prior pass — examine thoroughly."
+
+    llm = get_llm_client(model=settings.LLM_MODEL, provider=settings.LLM_PROVIDER, agent_name="llm_extractor")
+
+    class _SingleResult(BaseModel):
+        kpi_id: str
+        found: bool
+        value: Optional[str] = None
+        page: Optional[int] = None
+        source_element_type: Optional[Literal["text", "table_cell", "chart"]] = None
+        footnote_ids: list[str] = []
+        confidence: float = 0.0
+        alias_used: Optional[str] = None
+
+    chain = (
+        TIER3_RETRY_PROMPT
+        | llm.with_structured_output(_SingleResult).with_retry()
+    )
+
+    try:
+        result: _SingleResult = chain.invoke(
+            {
+                "fiscal_year": "",  # caller should pass; left empty as sensible default
+                "kpi_id": kpi_request.kpi_id,
+                "kpi_name": kpi_request.kpi_name,
+                "aliases": ", ".join(kpi_request.aliases) if kpi_request.aliases else "none",
+                "definition": kpi_request.definition,
+                "validator_note": note,
+                "section_name": section.section_name_canonical,
+                "section_context": context,
+            }
+        )
+        return Tier3ExtractionResult(
+            kpi_id=kpi_request.kpi_id,
+            found=result.found,
+            value=result.value,
+            page=result.page,
+            source_element_type=result.source_element_type,
+            footnote_ids=result.footnote_ids,
+            confidence=result.confidence,
+            alias_used=result.alias_used,
+        )
+    except Exception:
+        log.exception(
+            "Retry LLM call failed for kpi_id=%s section=%s",
+            kpi_request.kpi_id,
+            section.section_name_canonical,
+        )
+        return Tier3ExtractionResult(kpi_id=kpi_request.kpi_id, found=False)
+
+
 def run_llm_extraction_for_section(
     section: Section,
     kpi_requests: list[Tier3KPIRequest],
@@ -189,7 +264,7 @@ def run_llm_extraction_for_section(
     context = build_section_context_for_prompt(section)
     kpi_list = _format_kpi_list(kpi_requests)
 
-    llm = get_llm_client()
+    llm = get_llm_client(model=settings.LLM_MODEL, provider=settings.LLM_PROVIDER, agent_name="llm_extractor")
     chain = (
         TIER3_EXTRACTION_PROMPT
         | llm.with_structured_output(_Tier3BatchOutput).with_retry()
@@ -283,6 +358,8 @@ def run_llm_extraction(
 
     # Run LLM per section, collect CandidateValues keyed by kpi_id.
     kpi_candidates: defaultdict[str, list[CandidateValue]] = defaultdict(list)
+    # Track alias_used per kpi_id (last non-None value wins).
+    kpi_alias_used: dict[str, Optional[str]] = {}
 
     # Track KPIs found during this Tier 3 run so they are removed from
     # subsequent sections' prompts — only truly unresolved KPIs are sent to
@@ -322,6 +399,8 @@ def run_llm_extraction(
                             confidence=r.confidence,
                         )
                     )
+                    if r.alias_used:
+                        kpi_alias_used[req.kpi_id] = r.alias_used
                     resolved_in_loop.add(req.kpi_id)
 
     # Per-KPI resolution — same 0/1/>1-distinct-values branching as Tiers 1/2.
@@ -347,6 +426,7 @@ def run_llm_extraction(
         if len(distinct_values) == 1:
             best = max(candidates, key=lambda c: c.confidence)
 
+            alias = kpi_alias_used.get(kpi_id)
             if best.confidence < settings.LOW_CONFIDENCE_THRESHOLD:
                 record.value = best.value
                 record.section = best.section_name_canonical
@@ -357,6 +437,7 @@ def run_llm_extraction(
                 record.confidence = best.confidence
                 record.status = "needs_human_review"
                 record.review_reason = "low_confidence"
+                record.alias_used = alias
                 record.attempts.append(
                     ExtractionAttempt(
                         tier="llm",
@@ -379,6 +460,7 @@ def run_llm_extraction(
                 record.footnotes = list({fn for c in candidates for fn in c.footnotes})
                 record.confidence = best.confidence
                 record.status = "found"
+                record.alias_used = alias
                 record.attempts.append(
                     ExtractionAttempt(
                         tier="llm",
@@ -427,5 +509,120 @@ def run_llm_extraction(
                     note="LLM returned found=False in all canonical sections",
                 )
             )
+
+    # ------------------------------------------------------------------
+    # OTHER-section fallback: if section parsing produced no canonical
+    # sections (e.g. PyMuPDF heading mis-detection mapped everything to
+    # OTHER or Document), give still-unresolved KPIs one more chance by
+    # searching through any available OTHER/Document sections.
+    # This is explicitly a last resort — only runs when there are no
+    # usable canonical sections AND at least one OTHER section exists.
+    # ------------------------------------------------------------------
+    other_sections = [
+        s for s in sections
+        if s.section_name_canonical in ("OTHER", "Document")
+    ]
+
+    if other_sections:
+        still_unresolved = [
+            taxonomy_by_id[kpi_id]
+            for kpi_id, record in ledger.records.items()
+            if record.status == "not_found" and kpi_id in taxonomy_by_id
+        ]
+        if still_unresolved:
+            log.warning(
+                "%d KPI(s) still not_found after canonical section pass — "
+                "trying %d OTHER/Document section(s) as fallback.",
+                len(still_unresolved),
+                len(other_sections),
+            )
+            # Only fall back if the canonical sections produced very few hits
+            # (i.e. real section parsing largely failed).  Heuristic: if more
+            # than half the applicable KPIs were found canonically, the section
+            # split is working and OTHER-section search would just introduce
+            # hallucination risk in irrelevant text.
+            total_applicable = len(taxonomy_by_id)
+            found_count = sum(
+                1 for r in ledger.records.values()
+                if r.status in ("found", "flagged", "needs_human_review")
+            )
+            if total_applicable > 0 and found_count / total_applicable < 0.5:
+                other_requests = [
+                    Tier3KPIRequest(
+                        kpi_id=e.kpi_id,
+                        kpi_name=e.kpi_name,
+                        aliases=e.aliases,
+                        definition=e.definition,
+                    )
+                    for e in still_unresolved
+                ]
+                fallback_candidates: defaultdict[str, list[CandidateValue]] = defaultdict(list)
+                fallback_alias: dict[str, Optional[str]] = {}
+
+                for other_section in other_sections:
+                    remaining = [r for r in other_requests if ledger.records[r.kpi_id].status == "not_found"]
+                    if not remaining:
+                        break
+                    results = run_llm_extraction_for_section(other_section, remaining, fiscal_year)
+                    for r in results:
+                        if r.found and r.value is not None:
+                            fallback_candidates[r.kpi_id].append(
+                                CandidateValue(
+                                    value=r.value,
+                                    section_name_canonical=other_section.section_name_canonical,
+                                    page=r.page,
+                                    source_element_type=r.source_element_type or "text",
+                                    footnotes=r.footnote_ids,
+                                    confidence=r.confidence,
+                                )
+                            )
+                            if r.alias_used:
+                                fallback_alias[r.kpi_id] = r.alias_used
+
+                for kpi_id, candidates in fallback_candidates.items():
+                    if not candidates:
+                        continue
+                    record = ledger.records[kpi_id]
+                    best = max(candidates, key=lambda c: c.confidence)
+                    alias = fallback_alias.get(kpi_id)
+                    if best.confidence < settings.LOW_CONFIDENCE_THRESHOLD:
+                        record.value = best.value
+                        record.section = best.section_name_canonical
+                        record.page = best.page
+                        record.method = "llm"
+                        record.source_element_type = best.source_element_type
+                        record.footnotes = list({fn for c in candidates for fn in c.footnotes})
+                        record.confidence = best.confidence
+                        record.status = "needs_human_review"
+                        record.review_reason = "low_confidence"
+                        record.alias_used = alias
+                        record.attempts.append(ExtractionAttempt(
+                            tier="llm",
+                            value=best.value,
+                            confidence=best.confidence,
+                            outcome="flagged",
+                            note=f"OTHER-section fallback, low confidence: {best.confidence:.2f}",
+                        ))
+                    else:
+                        record.value = best.value
+                        record.section = best.section_name_canonical
+                        record.page = best.page
+                        record.method = "llm"
+                        record.source_element_type = best.source_element_type
+                        record.footnotes = list({fn for c in candidates for fn in c.footnotes})
+                        record.confidence = best.confidence
+                        record.status = "found"
+                        record.alias_used = alias
+                        record.attempts.append(ExtractionAttempt(
+                            tier="llm",
+                            value=best.value,
+                            confidence=best.confidence,
+                            outcome="found",
+                            note=f"OTHER-section fallback hit in {best.section_name_canonical}",
+                        ))
+                        log.info(
+                            "OTHER-section fallback found kpi_id=%s value=%s confidence=%.2f",
+                            kpi_id, best.value, best.confidence,
+                        )
 
     return ledger

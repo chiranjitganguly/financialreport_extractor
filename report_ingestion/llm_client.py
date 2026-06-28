@@ -1,11 +1,19 @@
-"""Report-ingestion LLM singleton.
+"""Report-ingestion LLM factory.
 
-Uses the model/provider configured in report_ingestion.config so that
-classification and company-name extraction can use a different model from
-the rest of the pipeline (e.g. a faster/cheaper model for classification).
+Returns a fresh LLM client on each call so that the active TokenUsageTracker
+(if any) is picked up at call time rather than at module import time.
+Callers use `get_llm()` to get a token-tracked client.
 """
+
+from langchain_core.language_models import BaseChatModel
 
 from common.llm_client import get_llm_client
 from report_ingestion.config import settings
 
-llm = get_llm_client(model=settings.LLM_MODEL, provider=settings.LLM_PROVIDER)
+
+def get_llm() -> BaseChatModel:
+    return get_llm_client(
+        model=settings.LLM_MODEL,
+        provider=settings.LLM_PROVIDER,
+        agent_name="report_ingestion",
+    )

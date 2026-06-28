@@ -1,0 +1,2450 @@
+<?xml version="1.0" ?>
+<KPIExtractionReport generated_at="2026-06-28T17:43:25Z">
+  <ReportMetadata>
+    <CompanyName>Sona Comstar</CompanyName>
+    <Industry>Manufacturing</Industry>
+    <ReportType>annual_report</ReportType>
+    <FiscalYear/>
+    <AccountingStandard>IND-AS</AccountingStandard>
+    <Country>India</Country>
+    <Language>en</Language>
+    <ReportID>e20711f1-7997-579b-9c4a-25ca9d80c85b</ReportID>
+  </ReportMetadata>
+  <ExtractionSummary>
+    <TotalKPIs>101</TotalKPIs>
+    <Resolved>38</Resolved>
+    <NeedsReview>63</NeedsReview>
+  </ExtractionSummary>
+  <ResolvedKPIs>
+    <KPI id="KPI_002">
+      <KPIName>Revenue Growth</KPIName>
+      <Value>25.99%</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_003">
+      <KPIName>Net Sales</KPIName>
+      <Value>41,236.74</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>130</Page>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_004">
+      <KPIName>Gross Profit</KPIName>
+      <Value>21,456.86</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>130</Page>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_005">
+      <KPIName>Gross Margin</KPIName>
+      <Value>48.00%</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_006">
+      <KPIName>Operating Income</KPIName>
+      <Value>44,494.60</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>0</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_007">
+      <KPIName>Operating Margin</KPIName>
+      <Value>10.00%</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>0</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_008">
+      <KPIName>EBIT</KPIName>
+      <Value>8,416.18</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>0</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_009">
+      <KPIName>EBIT Margin</KPIName>
+      <Value>18.92%</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>0</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_012">
+      <KPIName>Net Profit</KPIName>
+      <Value>6464.15</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>128</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_013">
+      <KPIName>Net Profit Margin</KPIName>
+      <Value>15.66</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>130</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_014">
+      <KPIName>Profit Before Tax</KPIName>
+      <Value>8,572.52</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_015">
+      <KPIName>Basic EPS</KPIName>
+      <Value>10.40</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>75</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_016">
+      <KPIName>Diluted EPS</KPIName>
+      <Value>10.40</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>75</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_017">
+      <KPIName>Operating Cash Flow</KPIName>
+      <Value>6,145.89</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>78</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_018">
+      <KPIName>Free Cash Flow</KPIName>
+      <Value>(15,712.19)</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>151</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_019">
+      <KPIName>Capital Expenditure</KPIName>
+      <Value>968.64</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Notes to Financial Statements</DocumentSection>
+      <Page>123</Page>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_021">
+      <KPIName>Total Assets</KPIName>
+      <Value>69,764.41</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_022">
+      <KPIName>Total Liabilities</KPIName>
+      <Value>11,349.42</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_023">
+      <KPIName>Shareholders Equity</KPIName>
+      <Value>58,414.99</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_024">
+      <KPIName>Current Assets</KPIName>
+      <Value>28,859.38</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_025">
+      <KPIName>Current Liabilities</KPIName>
+      <Value>8,446.72</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_026">
+      <KPIName>Current Ratio</KPIName>
+      <Value>3.41</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_028">
+      <KPIName>Debt to Equity Ratio</KPIName>
+      <Value>,</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>deterministic</ExtractionMethod>
+      <ExtractingAgent>deterministic_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>126</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_029">
+      <KPIName>Interest Coverage Ratio</KPIName>
+      <Value>11.91</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_031">
+      <KPIName>Return on Equity</KPIName>
+      <Value>11.00%</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_032">
+      <KPIName>Return on Capital Employed</KPIName>
+      <Value>18.04%</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>140</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_034">
+      <KPIName>Inventory</KPIName>
+      <Value>2,684.07</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_035">
+      <KPIName>Inventory Turnover</KPIName>
+      <Value>21,419.57</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>0</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_038">
+      <KPIName>Receivables Turnover</KPIName>
+      <Value>1,024.18</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_041">
+      <KPIName>Payables Turnover</KPIName>
+      <Value>4,143.72</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_042">
+      <KPIName>Days Payables Outstanding</KPIName>
+      <Value>62.32</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_043">
+      <KPIName>Working Capital</KPIName>
+      <Value>20,412.88</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>OTHER</DocumentSection>
+      <Page>70</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_045">
+      <KPIName>Book Value Per Share</KPIName>
+      <Value>93.88</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>table_cell</SourceElementType>
+    </KPI>
+    <KPI id="KPI_046">
+      <KPIName>Dividend Per Share</KPIName>
+      <Value>1.60</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_047">
+      <KPIName>Dividend Payout Ratio</KPIName>
+      <Value>30.00%</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_048">
+      <KPIName>Net Debt</KPIName>
+      <Value>1,896.27</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_049">
+      <KPIName>Net Debt to EBITDA</KPIName>
+      <Value>0.29</Value>
+      <Confidence>0.9000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page/>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+    <KPI id="KPI_089">
+      <KPIName>Employee Headcount</KPIName>
+      <Value>2008</Value>
+      <Confidence>1.0000</Confidence>
+      <ExtractionMethod>llm</ExtractionMethod>
+      <ExtractingAgent>llm_extractor</ExtractingAgent>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <DocumentSection>Statement of Cash Flows</DocumentSection>
+      <Page>69</Page>
+      <SourceElementType>text</SourceElementType>
+    </KPI>
+  </ResolvedKPIs>
+  <KPIsNeedingReview>
+    <KPI id="KPI_001">
+      <KPIName>Revenue</KPIName>
+      <Value>1</Value>
+      <Confidence>1.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>164</Page>
+      <SourceElementType>text</SourceElementType>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="found">
+          <Value>1</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>matched in Management Discussion and Analysis via text</Note>
+        </Attempt>
+        <Attempt tier="deterministic" outcome="flagged">
+          <Value>1</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>Tally rule 'RULE_001' failed: Gross Profit = Revenue - Cost of Revenue (tally check) (formula: abs(KPI_004 - (KPI_001 - KPI_003)) &lt;= tolerance)</Note>
+        </Attempt>
+        <Attempt tier="deterministic" outcome="flagged">
+          <Value>1</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>Tally rule 'RULE_002' failed: EBITDA Margin = EBITDA / Revenue (tally check within 5%) (formula: abs(KPI_011 - (KPI_010 / KPI_001 * 100)) &lt;= tolerance)</Note>
+        </Attempt>
+        <Attempt tier="deterministic" outcome="flagged">
+          <Value>1</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>Tally rule 'RULE_003' failed: Net Profit Margin = Net Profit / Revenue (tally check within 5%) (formula: abs(KPI_013 - (KPI_012 / KPI_001 * 100)) &lt;= tolerance)</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Retry (tier1_to_tier2): semantic retrieval found nothing.</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_010">
+      <KPIName>EBITDA</KPIName>
+      <Value>10,000.00</Value>
+      <Confidence>1.0000</Confidence>
+      <ReviewReason>validation_failed</ReviewReason>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>0</Page>
+      <SourceElementType>text</SourceElementType>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="found">
+          <Value>10,000.00</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>LLM matched in Management Discussion and Analysis</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="flagged">
+          <Value>10,000.00</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>Tally rule 'RULE_002' failed: EBITDA Margin = EBITDA / Revenue (tally check within 5%) (formula: abs(KPI_011 - (KPI_010 / KPI_001 * 100)) &lt;= tolerance)</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Retry (tier3_recheck): LLM still could not find value.</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="flagged">
+          <Value>10,000.00</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>Retry budget exhausted with tally rule still failing.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_011">
+      <KPIName>EBITDA Margin</KPIName>
+      <Value>22.50%</Value>
+      <Confidence>1.0000</Confidence>
+      <ReviewReason>validation_failed</ReviewReason>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>0</Page>
+      <SourceElementType>text</SourceElementType>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="found">
+          <Value>22.50%</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>LLM matched in Management Discussion and Analysis</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="flagged">
+          <Value>22.50%</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>Tally rule 'RULE_002' failed: EBITDA Margin = EBITDA / Revenue (tally check within 5%) (formula: abs(KPI_011 - (KPI_010 / KPI_001 * 100)) &lt;= tolerance)</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Retry (tier3_recheck): LLM still could not find value.</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="flagged">
+          <Value>22.50%</Value>
+          <Confidence>1.0000</Confidence>
+          <Note>Retry budget exhausted with tally rule still failing.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_020">
+      <KPIName>Cash Conversion Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_027">
+      <KPIName>Quick Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_030">
+      <KPIName>Return on Assets</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_033">
+      <KPIName>Asset Turnover</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_036">
+      <KPIName>Days Inventory Outstanding</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_037">
+      <KPIName/>
+      <Value>10,760.33</Value>
+      <Confidence>0.9000</Confidence>
+      <ReviewReason>section_discrepancy</ReviewReason>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>126</Page>
+      <SourceElementType>table_cell</SourceElementType>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <ConflictingValues>
+        <Conflict section="Management Discussion and Analysis" method="deterministic" source="text">11,507.13</Conflict>
+      </ConflictingValues>
+      <AttemptHistory>
+        <Attempt tier="llm" outcome="flagged">
+          <Value>10,760.33</Value>
+          <Confidence>0.9000</Confidence>
+          <Note>cross-section discrepancy resolution: The value of 10,760.33 is taken from a formal financial statement section (table) and represents total trade receivables as of March 31, 2026. The other candidate value (11,507.13) is also from a financial statement but is less precise and appears to be a rounded figure. Therefore, the more precise value from the formal financial statement is chosen.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_039">
+      <KPIName>Days Sales Outstanding</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_040">
+      <KPIName/>
+      <Value>4,143.72</Value>
+      <Confidence>0.7000</Confidence>
+      <ReviewReason>section_discrepancy</ReviewReason>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>126</Page>
+      <SourceElementType>text</SourceElementType>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <ConflictingValues>
+        <Conflict section="Management Discussion and Analysis" method="deterministic" source="text">4,622.30</Conflict>
+      </ConflictingValues>
+      <AttemptHistory>
+        <Attempt tier="llm" outcome="flagged">
+          <Value>4,143.72</Value>
+          <Confidence>0.7000</Confidence>
+          <Note>cross-section discrepancy resolution: Both candidate values are from the Management Discussion and Analysis section, which is less authoritative than formal financial statements. However, since they are the only available values and they represent the same fiscal year, I selected the first candidate value (4,143.72) as it is the first reported figure for Trade Payables in the section.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_044">
+      <KPIName>Working Capital Turnover</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_050">
+      <KPIName/>
+      <Value>1,510.82</Value>
+      <Confidence>0.8000</Confidence>
+      <ReviewReason>section_discrepancy</ReviewReason>
+      <DocumentSection>Management Discussion and Analysis</DocumentSection>
+      <Page>126</Page>
+      <SourceElementType>text</SourceElementType>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <ConflictingValues>
+        <Conflict section="Management Discussion and Analysis" method="deterministic" source="text">293.73</Conflict>
+      </ConflictingValues>
+      <AttemptHistory>
+        <Attempt tier="llm" outcome="flagged">
+          <Value>1,510.82</Value>
+          <Confidence>0.8000</Confidence>
+          <Note>cross-section discrepancy resolution: The value of 1,510.82 is more likely to represent Cash and Cash Equivalents as it is a larger figure and typically cash balances are higher than smaller components. The section is also from the Management Discussion and Analysis, which is the correct fiscal year target.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_051">
+      <KPIName>Loan Book</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_052">
+      <KPIName>Net Interest Income</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_053">
+      <KPIName>Net Interest Margin</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_054">
+      <KPIName>Cost to Income Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_055">
+      <KPIName>Gross NPA Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_056">
+      <KPIName>Net NPA Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_057">
+      <KPIName>Capital Adequacy Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_058">
+      <KPIName>Provision Coverage Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_059">
+      <KPIName>CASA Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_060">
+      <KPIName>Assets Under Management</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_061">
+      <KPIName>Gross Written Premium</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_062">
+      <KPIName>Net Written Premium</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_063">
+      <KPIName>Combined Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_064">
+      <KPIName>Loss Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_065">
+      <KPIName>Expense Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_066">
+      <KPIName>Solvency Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_067">
+      <KPIName>Occupancy Rate</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_068">
+      <KPIName>Average Daily Rate</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_069">
+      <KPIName>Revenue per Available Room</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_070">
+      <KPIName>Same Store Sales Growth</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_071">
+      <KPIName>Average Basket Size</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_072">
+      <KPIName>Inventory Sell Through</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_073">
+      <KPIName>Monthly Recurring Revenue</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_074">
+      <KPIName>Annual Recurring Revenue</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_075">
+      <KPIName>Customer Acquisition Cost</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_076">
+      <KPIName>Customer Lifetime Value</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_077">
+      <KPIName>Net Revenue Retention</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_078">
+      <KPIName>Churn Rate</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_079">
+      <KPIName>Average Revenue Per User</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_080">
+      <KPIName>Subscriber Count</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_081">
+      <KPIName>Data Usage Per Subscriber</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_082">
+      <KPIName>Plant Capacity Utilization</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_083">
+      <KPIName>Overall Equipment Effectiveness</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_084">
+      <KPIName>Production Volume</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_085">
+      <KPIName>Yield</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_086">
+      <KPIName>Scrap Rate</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_087">
+      <KPIName>Order Backlog</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_088">
+      <KPIName>On Time Delivery</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_090">
+      <KPIName>Employee Attrition Rate</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_091">
+      <KPIName>Lost Time Injury Frequency Rate</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_092">
+      <KPIName>Scope 1 Emissions</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_093">
+      <KPIName>Scope 2 Emissions</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_094">
+      <KPIName>Water Withdrawal</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_095">
+      <KPIName>Energy Consumption</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_096">
+      <KPIName>Waste Recycled</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_097">
+      <KPIName>Board Independence</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_098">
+      <KPIName>Female Board Representation</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_099">
+      <KPIName>Executive Compensation Ratio</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_100">
+      <KPIName>Carbon Intensity</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+    <KPI id="KPI_101">
+      <KPIName>Renewable Energy Usage</KPIName>
+      <Value/>
+      <Confidence>0.0000</Confidence>
+      <ReviewReason>not_found_after_retries</ReviewReason>
+      <DocumentSection/>
+      <Page/>
+      <SourceElementType/>
+      <ExtractionDate>2026-06-28</ExtractionDate>
+      <AttemptHistory>
+        <Attempt tier="deterministic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no table row or narrative match found</Note>
+        </Attempt>
+        <Attempt tier="semantic" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>no usable vector match found</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>LLM returned found=False in all canonical sections</Note>
+        </Attempt>
+        <Attempt tier="llm" outcome="not_found">
+          <Value/>
+          <Confidence>0.0000</Confidence>
+          <Note>Not found after all extraction passes and retries.</Note>
+        </Attempt>
+      </AttemptHistory>
+    </KPI>
+  </KPIsNeedingReview>
+</KPIExtractionReport>

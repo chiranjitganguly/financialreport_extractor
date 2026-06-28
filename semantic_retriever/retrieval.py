@@ -318,12 +318,19 @@ def run_semantic_retrieval(
     for kpi_id, entry in not_found_pairs:
         record = ledger.records[kpi_id]
 
-        candidates = extract_semantic_candidates(
-            taxonomy_entry=entry,
-            report_id=report_id,
-            fiscal_year=fiscal_year,
-            top_k=top_k,
-        )
+        try:
+            candidates = extract_semantic_candidates(
+                taxonomy_entry=entry,
+                report_id=report_id,
+                fiscal_year=fiscal_year,
+                top_k=top_k,
+            )
+        except Exception as exc:
+            log.warning(
+                "Semantic retrieval unavailable (vector DB down?) — skipping kpi_id=%s: %s",
+                kpi_id, exc,
+            )
+            candidates = []
 
         if not candidates:
             record.attempts.append(

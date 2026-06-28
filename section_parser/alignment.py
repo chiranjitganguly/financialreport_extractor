@@ -20,7 +20,7 @@ from typing import Optional, Union
 from pydantic import BaseModel, Field, create_model
 from rapidfuzz import fuzz, process
 
-from section_parser.llm_client import llm
+from section_parser.llm_client import get_llm
 from section_parser.prompts import (
     SECTION_ALIGNMENT_PROMPT,
     SECTION_REALIGNMENT_PROMPT,
@@ -143,14 +143,37 @@ def align_section_fuzzy(
 # ---------------------------------------------------------------------------
 
 
+_ALIGNMENT_BATCH_SIZE = 25  # max sections per LLM call — larger batches cause truncation
+
+
+async def _align_batch_chunk(
+    chunk: list[tuple[str, str]],
+    vocabulary_with_other: list[str],
+    BatchSchema,
+    chain,
+) -> dict[str, SectionAlignmentEntry]:
+    """Align one chunk of sections; returns raw_name → entry mapping."""
+    sections_json = json.dumps(
+        [{"section_name_raw": raw, "content_excerpt": excerpt} for raw, excerpt in chunk],
+        ensure_ascii=False,
+    )
+    raw_result = await chain.ainvoke(
+        {
+            "canonical_vocabulary": ", ".join(vocabulary_with_other),
+            "sections_json": sections_json,
+        }
+    )
+    return {entry.section_name_raw: entry for entry in raw_result.alignments}
+
+
 async def batch_align_sections_llm(
     unresolved: list[tuple[str, str]],
     vocabulary: list[str],
 ) -> list[SectionAlignmentResult]:
-    """Stage B: single batched LLM call for all sections that fuzzy missed.
+    """Stage B: batched LLM call for all sections that fuzzy missed.
 
-    All unresolved sections are sent in ONE structured-output call to minimise
-    API cost (same batching principle as ClassificationFallbackResult in Agent 1).
+    Splits the input into chunks of at most _ALIGNMENT_BATCH_SIZE to avoid
+    LLM response truncation when the document has many sections.
 
     Args:
         unresolved: List of ``(section_name_raw, content_excerpt)`` tuples for
@@ -171,28 +194,18 @@ async def batch_align_sections_llm(
     BatchSchema = _build_batch_llm_schema(vocabulary_with_other)
     chain = (
         SECTION_ALIGNMENT_PROMPT
-        | llm.with_structured_output(BatchSchema).with_retry()
+        | get_llm().with_structured_output(BatchSchema).with_retry()
     )
 
-    sections_json = json.dumps(
-        [
-            {"section_name_raw": raw, "content_excerpt": excerpt}
-            for raw, excerpt in unresolved
-        ],
-        ensure_ascii=False,
-    )
-
-    raw_result = await chain.ainvoke(
-        {
-            "canonical_vocabulary": ", ".join(vocabulary_with_other),
-            "sections_json": sections_json,
-        }
-    )
-
-    # Build a lookup from echoed section_name_raw → alignment entry
+    # Process in chunks to avoid response truncation
     raw_name_to_entry: dict[str, SectionAlignmentEntry] = {}
-    for entry in raw_result.alignments:
-        raw_name_to_entry[entry.section_name_raw] = entry
+    chunks = [
+        unresolved[i: i + _ALIGNMENT_BATCH_SIZE]
+        for i in range(0, len(unresolved), _ALIGNMENT_BATCH_SIZE)
+    ]
+    for chunk in chunks:
+        chunk_result = await _align_batch_chunk(chunk, vocabulary_with_other, BatchSchema, chain)
+        raw_name_to_entry.update(chunk_result)
 
     results: list[SectionAlignmentResult] = []
     for section_name_raw, _excerpt in unresolved:
@@ -254,7 +267,7 @@ async def realign_section_low_confidence(
     RealignSchema = _build_realign_llm_schema(vocabulary_with_other)
     chain = (
         SECTION_REALIGNMENT_PROMPT
-        | llm.with_structured_output(RealignSchema).with_retry()
+        | get_llm().with_structured_output(RealignSchema).with_retry()
     )
 
     raw_result = await chain.ainvoke(

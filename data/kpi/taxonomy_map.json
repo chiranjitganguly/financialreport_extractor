@@ -425,10 +425,7 @@
     "definition": "Basic EPS as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Basic EPS.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
       "Statement of Profit and Loss",
-      "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -455,10 +452,7 @@
     "definition": "Diluted EPS as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Diluted EPS.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
       "Statement of Profit and Loss",
-      "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -485,9 +479,6 @@
     "definition": "Operating Cash Flow as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Operating Cash Flow.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
-      "Balance Sheet",
       "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
@@ -515,9 +506,6 @@
     "definition": "Free Cash Flow as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Free Cash Flow.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
-      "Balance Sheet",
       "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
@@ -545,9 +533,6 @@
     "definition": "Capital Expenditure as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Capital Expenditure.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
-      "Balance Sheet",
       "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
@@ -575,9 +560,6 @@
     "definition": "Cash Conversion Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Cash Conversion Ratio.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
-      "Balance Sheet",
       "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
@@ -605,10 +587,7 @@
     "definition": "Total Assets as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Total Assets.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
       "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -635,10 +614,7 @@
     "definition": "Total Liabilities as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Total Liabilities.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
       "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -665,10 +641,7 @@
     "definition": "Shareholders Equity as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Shareholders Equity.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
       "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -695,10 +668,7 @@
     "definition": "Current Assets as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Current Assets.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
       "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -725,10 +695,7 @@
     "definition": "Current Liabilities as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Current Liabilities.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
       "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -755,10 +722,7 @@
     "definition": "Current Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Current Ratio.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
       "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [
@@ -785,10 +749,7 @@
     "definition": "Quick Ratio as disclosed by the company. Extract the reported value directly where available; if only components are reported, compute according to the standard financial definition for Quick Ratio.",
     "canonical_sections": [
       "Financial Highlights",
-      "Management Discussion and Analysis",
-      "Statement of Profit and Loss",
       "Balance Sheet",
-      "Statement of Cash Flows",
       "Notes to Financial Statements"
     ],
     "applicable_industries": [

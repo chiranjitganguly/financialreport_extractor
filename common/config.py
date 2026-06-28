@@ -36,6 +36,29 @@ class CommonSettings(BaseSettings):
     DISCREPANCY_LLM_MODEL: str = "gpt-4o-mini"
     DISCREPANCY_LLM_PROVIDER: str = "openai"
 
+    # Validation rules map (Agent 7).  Path to a JSON file of ValidationRule
+    # entries.  Leave empty to skip validation (loop exits immediately with no
+    # rules to check).
+    VALIDATION_RULES_MAP_PATH: str = "data/validation_rules/validation_rules.json"
+
+    # Confidence threshold for the final low-confidence passthrough (Agent 7).
+    # Records with confidence < this after extraction are routed to human review.
+    EXTRACTION_CONFIDENCE_THRESHOLD: float = 0.25
+
+    # Footnote keywords that indicate a value is substantively qualified
+    # (adjusted, non-GAAP, restated, etc.).  Case-insensitive substring match.
+    FOOTNOTE_MATERIALITY_KEYWORDS: list[str] = [
+        "adjusted",
+        "excludes",
+        "excluding",
+        "restated",
+        "non-gaap",
+        "pro forma",
+        "one-time",
+        "exceptional item",
+        "discontinued operations",
+    ]
+
     model_config = {"env_file": ".env", "extra": "ignore"}
 
 

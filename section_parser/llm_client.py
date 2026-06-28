@@ -1,11 +1,18 @@
-"""Section-parser LLM singleton.
+"""Section-parser LLM factory.
 
-Uses the model/provider configured in section_parser.config so the alignment
-step can run a different model from the ingestion/extraction agents
-(e.g. a smaller model for heading classification).
+Returns a fresh LLM client on each call so that the active TokenUsageTracker
+(if any) is picked up at call time rather than at module import time.
 """
+
+from langchain_core.language_models import BaseChatModel
 
 from common.llm_client import get_llm_client
 from section_parser.config import settings
 
-llm = get_llm_client(model=settings.LLM_MODEL, provider=settings.LLM_PROVIDER)
+
+def get_llm() -> BaseChatModel:
+    return get_llm_client(
+        model=settings.LLM_MODEL,
+        provider=settings.LLM_PROVIDER,
+        agent_name="section_parser",
+    )

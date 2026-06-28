@@ -167,6 +167,7 @@ AttemptRecord = ExtractionAttempt
 
 class ExtractionRecord(BaseModel):
     kpi_id: str
+    kpi_name: Optional[str] = None  # populated from taxonomy at ledger init
     value: Optional[Union[str, float, int]] = None
     fiscal_year: str
     # section/method are None until a tier populates them; initialize_extraction_ledger
@@ -189,6 +190,7 @@ class ExtractionRecord(BaseModel):
     ] = None
     conflicting_values: list[ConflictingValue] = []
     attempts: list[ExtractionAttempt] = []
+    alias_used: Optional[str] = None  # term the LLM found the KPI under in the doc
 
 
 class ExtractionLedger(BaseModel):
@@ -199,3 +201,18 @@ class ExtractionLedger(BaseModel):
     """
 
     records: dict[str, ExtractionRecord] = {}
+
+
+# ---------------------------------------------------------------------------
+# Validation Rules (Agent 7)
+# ---------------------------------------------------------------------------
+
+class ValidationRule(BaseModel):
+    rule_id: str
+    description: str
+    rule_type: Literal["tally", "plausibility_bound"]
+    formula: str          # expression using kpi_id strings as variable names,
+                          # evaluated via simpleeval — e.g.
+                          # "abs(revenue - (cogs + gross_profit)) <= tolerance"
+    participating_kpi_ids: list[str]
+    tolerance: float = 0.0

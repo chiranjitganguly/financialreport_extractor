@@ -97,7 +97,7 @@ def resolve_cross_section_discrepancy(
 
     Does NOT consume the shared 2-turn retry budget (per main spec §6a).
     """
-    llm = get_llm_client(model=common_settings.DISCREPANCY_LLM_MODEL, provider=common_settings.DISCREPANCY_LLM_PROVIDER)
+    llm = get_llm_client(model=common_settings.DISCREPANCY_LLM_MODEL, provider=common_settings.DISCREPANCY_LLM_PROVIDER, agent_name="discrepancy_resolver")
     chain = (
         DISCREPANCY_RESOLUTION_PROMPT
         | llm.with_structured_output(_DiscrepancyResolutionResult).with_retry()

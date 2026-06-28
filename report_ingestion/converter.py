@@ -38,12 +38,11 @@ def convert_document(file_path: str) -> DoclingConversionResult:
 
     Raises:
         DocumentConversionError: If Docling cannot process the file at all (corrupt
-            file, unsupported format). Caller (pipeline.py) catches this and falls
-            back to convert_document_fallback().
+            file, unsupported format, or docling not installed). Caller (pipeline.py)
+            catches this and falls back to convert_document_fallback().
     """
-    from docling.datamodel.base_models import ConversionStatus
-
     try:
+        from docling.datamodel.base_models import ConversionStatus
         result = _get_converter().convert(source=file_path)
     except Exception as exc:
         raise DocumentConversionError(

@@ -49,7 +49,17 @@ from common.output_writer import (
     format_vector_indexer_md,
     write_agent_output,
 )
+import shutil
+from collections import defaultdict
+
 from extraction_pipeline import run_extraction_pipeline
+from validation_retry_loop import run_validation_retry_loop
+from consolidation.pipeline import run_consolidation
+from consolidation.summary_writer import write_summary_report
+from common.token_tracker import TokenUsageTracker
+from common.timing_tracker import TimingTracker
+from common.validation_rules import load_validation_rules_map
+from common.taxonomy_map import filter_applicable_taxonomy
 
 _SUPPORTED_EXTENSIONS = {".pdf", ".docx"}
 
@@ -159,9 +169,13 @@ async def run_report_ingestion(file_path: str, report_id: str) -> ReportIngestio
         ReportIngestionOutput with status "ready" (ReportMetadata populated) or
         "awaiting_input" (flagged_fields populated, report queued for review).
     """
+    token_tracker = TokenUsageTracker.activate()
+    timing_tracker = TimingTracker()
+
     # ------------------------------------------------------------------
     # Step 1: Document conversion
     # ------------------------------------------------------------------
+    t1 = timing_tracker.start("report_ingestion")
     docling_document = None
     try:
         conversion = convert_document(file_path)
@@ -280,6 +294,7 @@ async def run_report_ingestion(file_path: str, report_id: str) -> ReportIngestio
             report_metadata=report_metadata,
             narrative_markdown=narrative_markdown,
         )
+        timing_tracker.stop(t1)
         await save_agent_run(report_id, "report_ingestion", output)
         write_agent_output(
             format_report_ingestion_md(output, report_metadata),
@@ -291,6 +306,7 @@ async def run_report_ingestion(file_path: str, report_id: str) -> ReportIngestio
         # Tables/charts/footnotes are empty until Agent 1b is built.
         # ------------------------------------------------------------------
         try:
+            t2 = timing_tracker.start("section_parser")
             agent2_output: SectionParserOutput = await run_section_parser(
                 docling_document=docling_document,
                 report_metadata=report_metadata,
@@ -301,26 +317,119 @@ async def run_report_ingestion(file_path: str, report_id: str) -> ReportIngestio
                 canonical_vocabulary=_get_canonical_vocabulary(),
                 remaining_retry_budget=2,
             )
+            timing_tracker.stop(t2)
             await save_agent_run(report_id, "section_parser", agent2_output)
             write_agent_output(
                 format_section_parser_md(agent2_output, report_metadata),
                 report_metadata, "section_parser", common_settings.OUTPUT_DIR,
             )
-            agent3_output = await run_vector_indexer(
-                sections=agent2_output.sections,
-                report_metadata=report_metadata,
-            )
+
+            t3 = timing_tracker.start("vector_indexer")
+            try:
+                agent3_output = await run_vector_indexer(
+                    sections=agent2_output.sections,
+                    report_metadata=report_metadata,
+                )
+            except Exception as _vi_exc:
+                log.warning(
+                    "Vector indexer unavailable (DB down?) — skipping: %s. "
+                    "Semantic retrieval will return no results this run.",
+                    _vi_exc,
+                )
+                from vector_indexer.schemas import VectorIndexerOutput
+                agent3_output = VectorIndexerOutput(report_id=report_id)
+            timing_tracker.stop(t3)
             await save_agent_run(report_id, "vector_indexer", agent3_output)
             write_agent_output(
                 format_vector_indexer_md(agent3_output, report_metadata),
                 report_metadata, "vector_indexer", common_settings.OUTPUT_DIR,
             )
+
+            t4 = timing_tracker.start("extraction_cascade")
             ledger = run_extraction_pipeline(
                 sections=agent2_output.sections,
                 report_metadata=report_metadata,
                 output_dir=common_settings.OUTPUT_DIR,
             )
+            timing_tracker.stop(t4)
             await save_agent_run(report_id, "extraction_pipeline", ledger)
+
+            # Snapshot ledger state before validation (for summary turn counts)
+            import copy
+            ledger_before_validation = copy.deepcopy(ledger)
+
+            # Build dicts needed by Agent 7/8
+            sections_by_canonical_name: dict = defaultdict(list)
+            for sec in agent2_output.sections:
+                sections_by_canonical_name[sec.section_name_canonical].append(sec)
+
+            taxonomy = load_taxonomy_map(common_settings.TAXONOMY_MAP_PATH)
+            filtered_taxonomy = filter_applicable_taxonomy(taxonomy, report_metadata)
+            taxonomy_by_id = {entry.kpi_id: entry for entry in filtered_taxonomy}
+
+            try:
+                rules = load_validation_rules_map(common_settings.VALIDATION_RULES_MAP_PATH)
+            except Exception:
+                log.warning("Could not load validation rules from %s — skipping tally checks.",
+                            common_settings.VALIDATION_RULES_MAP_PATH)
+                rules = []
+
+            t7 = timing_tracker.start("validation_retry_loop")
+            remaining_retry_budget = max(0, 2 - agent2_output.retry_turns_used)
+            validation_output = run_validation_retry_loop(
+                ledger=ledger,
+                rules=rules,
+                taxonomy_by_id=taxonomy_by_id,
+                sections_by_canonical_name=dict(sections_by_canonical_name),
+                footnotes_by_id={},
+                report_id=report_id,
+                fiscal_year=report_metadata.fiscal_year,
+                remaining_retry_budget=remaining_retry_budget,
+                confidence_threshold=common_settings.EXTRACTION_CONFIDENCE_THRESHOLD,
+                material_keywords=common_settings.FOOTNOTE_MATERIALITY_KEYWORDS,
+            )
+            timing_tracker.stop(t7)
+            await save_agent_run(report_id, "validation_retry_loop", validation_output)
+
+            t9 = timing_tracker.start("consolidation")
+            final_report = run_consolidation(
+                ledger=validation_output.ledger,
+                report_id=report_id,
+                fiscal_year=report_metadata.fiscal_year,
+                report_metadata=report_metadata,
+                token_tracker=token_tracker,
+                output_dir=common_settings.OUTPUT_DIR,
+            )
+            timing_tracker.stop(t9)
+            await save_agent_run(report_id, "consolidation", final_report)
+
+            # Write summary markdown report
+            try:
+                summary_path = write_summary_report(
+                    final_output=final_report,
+                    validation_output=validation_output,
+                    ledger_before_validation=ledger_before_validation,
+                    report_metadata=report_metadata,
+                    taxonomy_by_id=taxonomy_by_id,
+                    token_tracker=token_tracker,
+                    timing_tracker=timing_tracker,
+                    output_dir=common_settings.OUTPUT_DIR,
+                )
+                log.info("Summary report written → %s", summary_path)
+            except Exception:
+                log.exception("Failed to write summary report for report_id=%s", report_id)
+
+            # Archive processed input file
+            try:
+                archive_dir = Path(common_settings.OUTPUT_DIR) / "archive"
+                archive_dir.mkdir(parents=True, exist_ok=True)
+                src = Path(file_path)
+                dest = archive_dir / src.name
+                shutil.move(str(src), str(dest))
+                log.info("Archived input file %s → %s", src.name, dest)
+            except Exception:
+                log.exception("Failed to archive input file %s", file_path)
+
         except Exception:
             log.exception(
                 "Agent 2/3/4 failed for report_id=%s; Agent 1 result preserved.", report_id

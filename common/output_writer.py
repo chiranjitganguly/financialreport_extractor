@@ -40,7 +40,7 @@ def build_output_path(
     report_type = _sanitize(report_metadata.report_type)
     fy = _sanitize(report_metadata.fiscal_year)
     filename = f"{company}_{report_type}_{fy}_{agent_name}.md"
-    return Path(output_dir) / filename
+    return Path(output_dir) / company / filename
 
 
 def write_agent_output(

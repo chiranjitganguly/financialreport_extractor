@@ -2,7 +2,7 @@ from typing import Literal, Optional, Union
 
 from pydantic import BaseModel, create_model
 
-from report_ingestion.llm_client import llm
+from report_ingestion.llm_client import get_llm
 from report_ingestion.prompts import CLASSIFICATION_FALLBACK_PROMPT
 from report_ingestion.schemas import (
     AccountingStandardResult,
@@ -96,7 +96,7 @@ async def run_classification_fallback(
         Fields not in ``needed_fields`` are None.
     """
     OutputSchema = _build_llm_output_schema(needed_fields, valid_industries)
-    chain = CLASSIFICATION_FALLBACK_PROMPT | llm.with_structured_output(OutputSchema).with_retry()
+    chain = CLASSIFICATION_FALLBACK_PROMPT | get_llm().with_structured_output(OutputSchema).with_retry()
 
     raw = await chain.ainvoke(
         {
