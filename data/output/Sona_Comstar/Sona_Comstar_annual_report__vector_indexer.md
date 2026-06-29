@@ -4,5 +4,5 @@
 
 | Metric | Value |
 |---|---|
-| Sections Persisted | 12 |
-| Total Chunks Embedded | 2087 |
+| Sections Persisted | 0 |
+| Total Chunks Embedded | 0 |

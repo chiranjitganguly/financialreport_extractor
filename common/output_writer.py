@@ -106,6 +106,36 @@ def format_report_ingestion_md(output: Any, report_metadata: ReportMetadata) -> 
 
 
 # ---------------------------------------------------------------------------
+# LangExtract section extraction formatter
+# ---------------------------------------------------------------------------
+
+def format_langextract_md(narrative_markdown: str, report_metadata: ReportMetadata) -> str:
+    """Wrap the langextract section markdown with a standard report header.
+
+    Args:
+        narrative_markdown: H2-structured markdown produced by langextract_converter.
+        report_metadata: Populated ReportMetadata for the header block.
+
+    Returns:
+        Complete markdown document ready to write to disk.
+    """
+    header = "\n".join([
+        "# LangExtract — Document Section Extraction",
+        "",
+        "| Field | Value |",
+        "|---|---|",
+        f"| Company | {report_metadata.company_name or '—'} |",
+        f"| Report Type | {report_metadata.report_type} |",
+        f"| Fiscal Year | {report_metadata.fiscal_year} |",
+        f"| Extraction Model | gpt-4o-mini (langextract) |",
+        "",
+        "---",
+        "",
+    ])
+    return header + narrative_markdown
+
+
+# ---------------------------------------------------------------------------
 # Agent 2 formatter
 # ---------------------------------------------------------------------------
 

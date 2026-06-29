@@ -44,6 +44,7 @@ from section_parser.pipeline import run_section_parser
 from section_parser.schemas import SectionParserOutput
 from vector_indexer.pipeline import run_vector_indexer
 from common.output_writer import (
+    format_langextract_md,
     format_report_ingestion_md,
     format_section_parser_md,
     format_vector_indexer_md,
@@ -300,6 +301,14 @@ async def run_report_ingestion(file_path: str, report_id: str) -> ReportIngestio
             format_report_ingestion_md(output, report_metadata),
             report_metadata, "report_ingestion", common_settings.OUTPUT_DIR,
         )
+
+        # Write the langextract section-extraction markdown when that backend
+        # was used. With CONVERTER_BACKEND=docling this file is not produced.
+        if settings.CONVERTER_BACKEND == "langextract":
+            write_agent_output(
+                format_langextract_md(narrative_markdown, report_metadata),
+                report_metadata, "langextract", common_settings.OUTPUT_DIR,
+            )
 
         # ------------------------------------------------------------------
         # Hand off to Agent 2 — only when metadata is fully resolved.

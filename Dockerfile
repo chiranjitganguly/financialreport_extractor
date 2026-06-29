@@ -1,6 +1,8 @@
 FROM python:3.11-slim
 
-# System libraries required by PyMuPDF, Docling, and lingua
+# System libraries required by PyMuPDF and lingua
+# (libgl1 / libglib2.0-0 / poppler-utils were needed by Docling — kept for
+# compatibility when switching back to CONVERTER_BACKEND=docling)
 RUN apt-get update && apt-get install -y --no-install-recommends \
         libmagic1 \
         poppler-utils \
@@ -33,9 +35,8 @@ COPY data/ ./data/
 COPY extraction_pipeline.py .
 COPY main.py .
 
-# Docling downloads its ML models on first use.  Point the cache at a
-# directory that can be mounted as a volume so models persist across
-# container restarts and are not re-downloaded every time.
+# Docling model cache — only used when CONVERTER_BACKEND=docling.
+# Kept so switching back does not require a Dockerfile change.
 ENV DOCLING_ARTIFACTS_PATH=/app/.docling_cache
 ENV TRANSFORMERS_CACHE=/app/.hf_cache
 VOLUME ["/app/.docling_cache", "/app/.hf_cache"]

@@ -4,10 +4,13 @@ langchain-openai>=0.2.0
 langchain-core>=0.3.0
 langchain-text-splitters>=0.3.0
 
-# Document conversion (primary)
-docling>=2.0.0
+# Document section extraction (current default backend)
+langextract[openai]>=0.1.0
 
-# Raw text fallback
+# Document conversion (legacy Docling backend — set CONVERTER_BACKEND=docling to use)
+# docling>=2.0.0
+
+# Raw text extraction (used by langextract backend to read PDFs before LLM pass)
 PyMuPDF>=1.27.0
 
 # Language detection
